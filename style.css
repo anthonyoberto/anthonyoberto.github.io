@@ -4,13 +4,20 @@ body {
 	padding: 0;
 }
 
-h1 {
-	font-family: Book Antiqua;
+/* Home */
+
+#time-machine {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 80px;
 }
 
-h1 img {
+h1 {
+	font-family: Book Antiqua, Adobe Garamond Pro, Garamond, Serif;
 	margin: 0 auto;
 	}
+
+/* This vs That */
 
 #body-content:after {
 	content: "";
@@ -34,24 +41,20 @@ h1 img {
 #title-header {
 	width: 850px;
 	margin: 0 auto;
-	text-align: center;	
+	text-align: center;
 }
 
 #title-header h1 {
 	position: relative;
 	margin-top: 0;
-}
-
-#sub-title {
-	width: 450px;
-	height: 50px;
-	margin: 0 auto;
-	text-align: center;
+	margin-bottom: 50px;
 }
 
 #body-content div {
 	position: relative;
 	float: left;
+	margin-bottom: 80px;
+	padding-top: 89px;
 }
 
 .left-vs-right {
@@ -63,9 +66,11 @@ h1 img {
 	font-size: 45px;
 }
 
+/* Footer */
+
 #body-footer {
-	background-color: white;
-	margin-top: 70px;
+	background-color: #cabcab;
+	margin-top: 0;
 }
 
 #creator-footer {
@@ -92,6 +97,8 @@ h1 img {
 	padding: 0 0 0 0;
 	width: 155px;
 	text-decoration: none;
+	font-family: Gill Sans MT, Gill Sans, century gothic;
+	font-size: 100%;
 }
 
 /*
