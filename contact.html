@@ -1,0 +1,89 @@
+<!doctype html>
+	<head>
+		<title>Nostalgia Wars!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+	<div id="fb-root"></div>
+   	<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '{your-app-id}',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+		<header id="body-header" class="contain">
+			<h1><img src="images/nostalgic-wars-title.png" alt="logo tagline"/></h1>
+		</header>
+
+<div class="fb-share-button" data-href="http://anthonyoberto.github.io" data-width="115" data-type="button_count"></div>
+
+		<form id="contact-form" action="/my-handling-form-page" method="post">
+		    <div>
+		        <label for="name">Name:</label>
+		        <input type="text" id="name" />
+		    </div>
+		    <div>
+		        <label for="mail">E-mail:</label>
+		        <input type="email" id="mail" />
+		    </div>
+		    <div>
+		        <label for="msg">Favorite Battle</label>
+		        <input type="text" id="battle" />
+		    </div>
+		    <div>
+		        <label for="msg">Message:</label>
+		        <textarea id="msg">Recommend a past pop-culture comparison for Nostalgia Wars here!</textarea>
+		    </div>
+		    <div class="button">
+		        <button type="submit">Send your message</button>
+		    </div>
+		</form>
+
+		<footer id="body-footer">
+			<div id="creator-footer" class="contain">
+				<div class="creators">
+					<img src="http://placehold.it/72x72">
+					<ul>
+						<li>Heidi Hillenbrand</li>
+						<li style="font-style:italic;">Designer</li>
+						<li>email</li>
+						<li>social media?</li>
+					</ul>				
+				</div>
+				<div class="creators">
+					<img src="http://placehold.it/72x72">
+					<ul>
+						<li>April Bender</li>
+						<li style="font-style:italic;">Designer</li>
+						<li>email</li>
+						<li>social media?</li>
+					</ul>
+				</div>
+				<div class="creators">
+					<img src="images/creators/creator-anthony-nostalgia.png">
+					<ul>
+						<li>Anthony Oberto</li>
+						<li style="font-style:italic;">Developer</li>
+						<li>email</li>
+						<li>social media?</li>
+					</ul>				
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
