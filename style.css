@@ -19,6 +19,12 @@ h1 {
 
 /* This vs That */
 
+h2 {
+	font-family: Book Antiqua, Adobe Garamond Pro, Garamond, Serif;
+	position: absolute;
+	padding-left: 355px;
+}
+
 #body-content:after {
 	content: "";
 	display: table;
