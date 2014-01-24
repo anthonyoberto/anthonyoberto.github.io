@@ -1,5 +1,10 @@
 body {
 	background-color: #aabbcc;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
 }
 
 #body-content:after {
@@ -18,10 +23,26 @@ body {
 	margin: 0 auto;	
 }
 
+#body-header h1 {
+	margin-bottom: 0px;
+}
+
 #title-header {
 	width: 450px;
 	margin: 0 auto;
 	text-align: center;	
+}
+
+#title-header h1 {
+	position: relative;
+	margin-top: 10px;
+}
+
+#sub-title {
+	width: 450px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #body-content div {
@@ -36,6 +57,37 @@ body {
 #vs {
 	top: 103px;
 	font-size: 45px;
+}
+
+#body-footer {
+	background-color: white;
+	margin-top: 70px;
+}
+
+#creator-footer {
+	padding-top: 40px;
+	height: 110px;
+}
+
+.creators {
+	position: relative;
+	float: left;
+	margin-left: 49px;
+	}
+
+.creators img {
+	position: relative;
+	float: left;
+}
+
+.creators ul {
+	position: relative;
+	float: left;
+	list-style: none;
+	margin: 0 0 0 20px;
+	padding: 0 0 0 0;
+	width: 155px;
+	text-decoration: none;
 }
 
 /*
