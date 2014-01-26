@@ -91,6 +91,8 @@ h1, h2, p {
 	-webkit-column-count: 3;
 	-o-column-count: 3;
 	column-count: 3;
+	font-family: Gill Sans MT, Gill Sans, century gothic;
+
 }
 
 .creator-columns {
@@ -106,7 +108,7 @@ h1, h2, p {
 .creator-columns ul {
 	float: left;
 	list-style: none;
-	padding: 7px 0 0 11px;
+	padding: 6px 0 0 11px;
 }
 
 /*
