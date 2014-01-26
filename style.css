@@ -114,7 +114,9 @@ h2 {
 	width: 960px;
 	margin: 0 auto;
 	margin-bottom: 50px;
+	text-align: center;
 }
+
 
 form {
   /* Just to center the form on the page */
