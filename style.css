@@ -110,6 +110,12 @@ h2 {
 
 /* Contact Page */
 
+.fb-share-button {
+	width: 960px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
 form {
   /* Just to center the form on the page */
   margin: 0 auto;
