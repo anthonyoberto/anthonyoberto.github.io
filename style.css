@@ -110,8 +110,11 @@ h2 {
 
 /* Contact Page */
 
+.fb_iframe_widget {
+	display: block;
+}
+
 .fb-share-button {
-	width: 960px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	text-align: center;
