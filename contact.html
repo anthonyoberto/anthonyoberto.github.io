@@ -1,67 +1,65 @@
 <!doctype html>
 	<head>
-		<title>Nostalgic Wars!</title>
+		<title>Nostalgia War!</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47452793-1', 'nostalgiawar.com');
+  ga('send', 'pageview');
+
+</script>
 	</head>
 
 	<body>
 
-	<div id="fb-root"></div>
-   	<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '{your-app-id}',
-          status     : true,
-          xfbml      : true
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/all.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 		<header id="body-header" class="contain">
-			<h1><img src="images/nostalgic-wars-title.png" alt="Nostalgic Wars"/></h1>
+			<h1><img src="images/title/nostalgia-war-title.png" alt="Nostalgia War"/></h1>
 		</header>
 
 		<section id="body-title" class="contain">
 			<h1>Thanks for playing!</h1>
 			&nbsp;
-			<p>
-				Just like ____, ____, and ____, Nostalgic Wars is more fun when shared. Please share Nostalgic Wars using the Facebook button below! If we reach <i>500 shares</i> by <b>Thursday 1/30</b>, we'll add <i><b>30 new battles</i></b>! And if you are feeling fancy, tell us your own pop-culture Nostalgic War comparison and we will let you know if and when we add it to the site and give you a credit!
+			<p id="contact-copy">
+				Just like chinese finger traps and winter scooter rides to Aspen, Nostalgia War is more fun when shared. Please share the nostalgia using the Facebook button below! If we reach <i><b>100 Facebook shares</b></i> by <b>Thursday 1/30 at midnight</b>, we&rsquo;ll add <i><b>30 new nostalgia battles</i></b>!
 			</p>
 		</section>
 
 		<div class="fb-share">
-			<div class="fb-share-button" data-href="http://anthonyoberto.github.io" data-width="115" data-type="button_count"></div>
+			<div class="fb-share-button" data-href="http://nostalgiawar.com" data-width="350" data-type="box_count"></div>		
 		</div>
 
 	    <form  action="form_process.php" method="post" enctype="contact_form">
-		    <input type="hidden" name="action" value="submit">
 		    Your name:<br>
 		    <input name="name" type="text" value="" size="30"/><br>
 		    Your email:<br>
 		    <input name="email" type="text" value="" size="30"/><br>
 		    Your message:<br>
-		    <textarea name="message" rows="7" cols="30">Share you Nostalgic War comparison here!</textarea><br>
+		    <textarea name="message" rows="7" cols="30"></textarea><br>
 		    <input type="submit" value="Send"/>
 	    </form>
-
 
 		<footer id="body-footer">
 			<div id="creators" class="contain">
 				<div class="creator-columns">
-					<img src="images/creators/creator-template-nostalgia.png">
+					<img src="images/creators/creator-heidi-nostalgia.png">
 					<ul>
 						<li>Heidi Hillenbrand</li>
 						<li style="font-style:italic;">Designer</li>
-						<li>social media?</li>
+						<li>social media</li>
 					</ul>				
 				</div>
 				<div class="creator-columns">
@@ -73,7 +71,7 @@
 					</ul>				
 				</div>
 				<div class="creator-columns">
-					<img src="images/creators/creator-template-nostalgia.png">
+					<img src="images/creators/creator-april-nostalgia.png">
 					<ul>
 						<li>April Bender</li>
 						<li style="font-style:italic;">Designer</li>

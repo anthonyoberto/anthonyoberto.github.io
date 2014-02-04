@@ -1,6 +1,6 @@
 
 body {
-	background-color: #aabbcc;
+	background-color: #abc;
 	margin: 0;
 	padding: 0;
 }
@@ -21,7 +21,7 @@ h1, h2, p {
 }
 
 #body-title p {
-	font-size: 17px;
+	font-size: 18px;
 }
 
 #body-content:after {
@@ -42,7 +42,7 @@ h1, h2, p {
 }
 
 #body-title {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
@@ -61,7 +61,6 @@ h1, h2, p {
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 80px;
-
 }
 
 #body-content div {
@@ -137,6 +136,10 @@ h1, h2, p {
 */
 
 /* Contact Page */
+
+#contact-copy {
+	width: 550px;
+}
 
 .fb-share {
 	margin: 0 auto;
