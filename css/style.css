@@ -12,6 +12,10 @@ h1 {
 	margin: 0;
 }
 
+h2 {
+	margin-top: 0;
+}
+
 h3 {
 	color: #aaa;
 	font-size: 1.8em;
@@ -44,9 +48,12 @@ p {
 	margin-top: 3em;
 }
 
+h2#sign-up {
+	margin-top: 2.5em;
+}
+
 #sign-up {
 	font-size: 1.5em;
-	margin-top: 3em;
 }
 
 .retina-icons {
