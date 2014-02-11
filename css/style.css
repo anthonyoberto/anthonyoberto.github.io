@@ -199,14 +199,6 @@ div p {
 		margin: 1em 1em 0 1em;
 	}
 
-	.riffle-icons {
-		height: 7.7em;
-		width: 7.7em;
-	}
-}
-
-@media screen and (min-width: 1170px) {
-
 	section {
 		display: inline-block;
 		width: 33%;
@@ -215,11 +207,6 @@ div p {
 
 	section h3 {
 		font-size: 1.8em;
-	}
-
-	.riffle-icons {
-		height: 7.7em;
-		width: 7.7em;
 	}
 
 	div p {
