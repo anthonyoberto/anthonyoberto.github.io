@@ -228,6 +228,11 @@ div p {
 		margin-bottom: 0;
 	}
 
+	#logo {
+		height: 15em;
+		width: 15em;
+	}
+
 	section h3 {
 		font-size: 1.5em;
 	}
@@ -245,6 +250,11 @@ div p {
 }
 
 @media screen and (max-width: 767px) {
+
+	#logo {
+		height: 15em;
+		width: 15em;
+	}
 
 	section:last-of-type {
 		margin-bottom: 0;
