@@ -33,8 +33,8 @@ jQuery(document).ready(function(){
 		}
 	}
 
-	var tag = 'kitten';
-	
+	var tag = 'worldcup';
+
 	$.ajax({
 
 		url: 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?client_id=1931ef62a2a3444f92e5e9b1fe635b43',
