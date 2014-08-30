@@ -1,0 +1,105 @@
+
+// @IMPORTED _PARTIALS (completed)
+// MIXINS (completed)
+// INHERITENCE ()
+
+// Alphabetize properties (completed)
+// Header, Body, Footer (completed)
+// Single Stylesheet w/ imported partials for each section of the page (completed)
+// box-sizing: border-box to each section w/ correct prefixes (use CSS3Please)
+// Convert box-sizings into a mixin
+
+$green: #027f45;
+$blue: #3366cc;
+$yellow: #f3c120;
+$font-stack: rockwell, serif;
+
+@import "header";
+@import "footer";
+
+@mixin header-text ($size: false) {
+    font-family: futura, sans-serif;
+    @if $size {
+      font-size: $size;
+    }
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 62.5%;
+  /*1em now == 10px; 1.5em == 15px; etc.*/
+  margin: 0;
+  padding: 0;
+}
+
+// placeholder
+%padded {
+  display: block;
+  padding-top: 3em;
+}
+
+.thanks {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+}
+
+#main {
+
+  h2 {
+    color: $green;
+    @include header-text(3em);
+      // font-family: futura, sans-serif;
+      // font-size: 3em;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .user-input-wrapper {
+    text-align: center;
+
+    form {
+        display: inline-block;
+    }
+
+    #button {
+      display: inline-block;
+      height:20px;
+      width:70px;
+      background-color:#cc0000;
+      font-family:arial;
+      font-weight:bold;
+      color:#ffffff;
+      border-radius: 5px;
+      text-align:center;
+      margin-top:2px;
+    }
+
+    .user-input {
+    }
+  }
+
+  #meme-grid {
+    display: inline-block;
+    margin-left: -1em;
+    margin: 0 0 0 -1em;
+    text-align: center;
+    @extend %padded;
+  }
+
+  .retina {
+    height: 40em;
+    width: 40em;
+  }
+
+  img {
+    margin: 0 0 5em 1em;
+  }
+}
