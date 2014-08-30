@@ -14,6 +14,8 @@ $blue: #3366cc;
 $yellow: #f3c120;
 $font-stack: rockwell, serif;
 
+$sm-screen-max: 640px;
+
 @import "header";
 @import "footer";
 
@@ -57,9 +59,13 @@ body {
     text-align: center;
   }
 
-  p {
-    font-size: 15px;
+  .thanks {
+    font-family: rockwell;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto;
     text-align: center;
+    width: 65%;
   }
 
   .user-input-wrapper {
@@ -102,4 +108,22 @@ body {
   img {
     margin: 0 0 5em 1em;
   }
+}
+
+@media screen and (max-width: $sm-screen-max) {
+
+  #main {
+
+    #meme-grid {
+    }
+
+    .retina {
+      height: 100%;
+      width: 100%;
+   }
+    img {
+      margin: 0;
+    }
+  }
+
 }
