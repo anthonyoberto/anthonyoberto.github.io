@@ -40,14 +40,6 @@ body {
   padding-top: 3em;
 }
 
-.thanks {
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 auto;
-  text-align: center;
-  width: 65%;
-}
-
 #main {
 
   h2 {
@@ -62,7 +54,7 @@ body {
   .thanks {
     font-family: rockwell;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 22px;
     margin: 0 auto;
     text-align: center;
     width: 65%;
@@ -116,11 +108,11 @@ body {
 
     .retina {
       height: 100%;
-      width: 100%;
+      width: 98%;
     }
 
     img {
-      margin: 0;
+      margin: 0 0 30px 8px;
     }
   }
 }
