@@ -72,7 +72,7 @@ body {
 #main img {
   margin: 0 0 5em 1em; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 641px) {
   #main .retina {
     height: 100%;
     width: 100%; }
