@@ -1,7 +1,0 @@
-{
-  "name": "activ8",
-  "private": false,
-  "dependencies": {
-    "jquery": "~1.11.1"
-  }
-}

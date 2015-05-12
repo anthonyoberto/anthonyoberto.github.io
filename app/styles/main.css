@@ -1,0 +1,494 @@
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto; }
+
+section, footer {
+  padding: 30px 50px; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0; }
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.contact-us-background {
+  background-color: #dadada;
+  height: 25px;
+  padding-top: 18px;
+  padding-bottom: 15px; }
+  .contact-us-background .contact-us-wrapper {
+    text-align: right;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; }
+  .contact-us-background div {
+    display: inline-block; }
+  .contact-us-background .email {
+    margin-right: 20px; }
+  .contact-us-background img {
+    width: 25px;
+    margin-right: 6px; }
+  .contact-us-background .phone img {
+    position: relative;
+    top: 2px; }
+  .contact-us-background p {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    bottom: 5px; }
+
+.primary-nav-wrapper {
+  border-bottom: 1px solid #e6eaed;
+  height: 67px;
+  padding-top: 18px;
+  padding-bottom: 15px; }
+  .primary-nav-wrapper h1 {
+    height: 67px; }
+  .primary-nav-wrapper .activ8-logo {
+    width: 370px;
+    margin-right: 30px; }
+  .primary-nav-wrapper .primary-nav {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    bottom: 10px; }
+  .primary-nav-wrapper li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 30px;
+    text-transform: uppercase; }
+  .primary-nav-wrapper li:last-of-type {
+    margin-right: 0; }
+
+#aboutUs {
+  height: 452px;
+  max-width: 1280px;
+  margin: 0 auto; }
+  #aboutUs .about-us-copy {
+    display: inline-block;
+    width: 36%;
+    max-width: 430px;
+    position: relative;
+    top: 47%;
+    transform: translateY(-53%); }
+  #aboutUs img {
+    float: right;
+    width: 60%;
+    max-width: 667px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+#whatWeDo {
+  background-color: #dadada; }
+  #whatWeDo .section-wrapper {
+    max-width: 1280px;
+    text-align: center; }
+  #whatWeDo .upper-copy {
+    display: none; }
+  #whatWeDo img {
+    padding: 10px;
+    width: 365px; }
+  #whatWeDo .center-copy {
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 0;
+    position: relative;
+    bottom: 37px;
+    width: 365px; }
+
+#ourClients {
+  border-bottom: 1px solid #e6eaed; }
+  #ourClients .client-copy {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1250px; }
+  #ourClients .client-logo-grid {
+    text-align: center;
+    max-width: 1250px; }
+  #ourClients img {
+    padding: 15px; }
+
+#contact {
+  height: 452px;
+  position: relative; }
+  #contact .copy-and-social-wrapper {
+    display: inline-block;
+    width: 29%;
+    max-width: 340px;
+    min-width: 274px; }
+  #contact .contact-social-wrapper {
+    margin-top: 47px; }
+    #contact .contact-social-wrapper img {
+      margin-right: 12px;
+      width: 40px; }
+  #contact form {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 34px;
+    width: 50%; }
+    #contact form input {
+      border: 1px solid #000;
+      color: #444444;
+      font-size: 15px;
+      height: 35px;
+      margin: 0 15px 20px 0;
+      padding-left: 10px;
+      width: 44%; }
+    #contact form textarea {
+      color: #444444;
+      font-size: 15px;
+      height: 161px;
+      margin: 0 0 15px 0;
+      padding: 10px 0 0 10px;
+      width: 94.2%; }
+    #contact form .send-button {
+      background-color: #444444;
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: .75px;
+      text-transform: uppercase;
+      width: 150px;
+      height: 38px;
+      transition: .75s background-color, .75s color; }
+    #contact form .send-button:hover {
+      background-color: #c9c9c9;
+      color: #444444; }
+
+footer {
+  background-color: #dadada;
+  font-size: 14px; }
+  footer p {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0; }
+  footer .footer-nav {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 3.5px; }
+    footer .footer-nav li {
+      display: inline-block;
+      list-style: none;
+      padding: 0 4px; }
+
+@media screen and (max-width: 1263px) {
+  #whatWeDo img {
+    padding: 10px;
+    width: 270px; }
+  #whatWeDo .center-copy {
+    padding: 10px;
+    padding-bottom: 0;
+    bottom: 12px;
+    width: 270px; }
+  #whatWeDo h1 {
+    font-size: 30px; }
+  #whatWeDo p {
+    font-size: 13.3px;
+    line-height: 19px;
+    margin-top: 5px; } }
+@media screen and (max-width: 1007px) {
+  #contact {
+    height: 415px; }
+    #contact .copy-and-social-wrapper {
+      width: 29%;
+      max-width: 340px;
+      min-width: 274px; }
+    #contact form {
+      position: absolute;
+      right: 10px;
+      top: 34px;
+      width: 50%; }
+      #contact form input {
+        font-size: 15px;
+        width: 40%; }
+      #contact form textarea {
+        color: #444444;
+        font-size: 15px;
+        height: 161px;
+        margin: 0 0 15px 0;
+        padding: 10px 0 0 10px;
+        width: 86.6%; }
+      #contact form .send-button {
+        background-color: #444444;
+        color: #fff;
+        cursor: pointer;
+        letter-spacing: .75px;
+        text-transform: uppercase;
+        width: 150px;
+        height: 38px;
+        transition: .75s background-color, .75s color; }
+      #contact form .send-button:hover {
+        background-color: #c9c9c9;
+        color: #444444; } }
+@media screen and (max-width: 978px) {
+  h1 {
+    font-size: 32px; }
+
+  .primary-nav-wrapper {
+    height: 67px;
+    padding-bottom: 40px; }
+    .primary-nav-wrapper h1 {
+      height: 67px; }
+    .primary-nav-wrapper .activ8-logo {
+      width: 340px;
+      margin-right: 0; }
+    .primary-nav-wrapper .primary-nav {
+      bottom: 0;
+      display: block;
+      font-size: 15px;
+      padding-top: 5px; }
+    .primary-nav-wrapper li {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 30px;
+      text-transform: uppercase; }
+    .primary-nav-wrapper li:last-of-type {
+      margin-right: 0; }
+
+  #aboutUs {
+    height: 360px; }
+    #aboutUs .about-us-copy {
+      width: 45%;
+      top: 50%;
+      transform: translateY(-50%); }
+    #aboutUs img {
+      width: 50%;
+      min-width: 320px; }
+
+  #whatWeDo p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 12px; }
+  #whatWeDo .upper-copy {
+    display: block;
+    padding: 0;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 27px; }
+  #whatWeDo img {
+    padding: 10px;
+    width: 40%; }
+  #whatWeDo .center-copy {
+    display: none; }
+  #whatWeDo h1 {
+    font-size: 30px; } }
+@media screen and (max-width: 720px) {
+  section, footer {
+    padding: 30px 35px; }
+
+  h1 {
+    font-size: 25px; }
+
+  p {
+    font-size: 14px;
+    line-height: 21px; }
+
+  .contact-us-background {
+    height: 25px;
+    padding-top: 18px;
+    padding-bottom: 15px; }
+    .contact-us-background .email {
+      margin-right: 15px; }
+    .contact-us-background img {
+      width: 20px; }
+    .contact-us-background .phone img {
+      top: 0; }
+    .contact-us-background p {
+      font-size: 13px;
+      margin: 0;
+      position: relative;
+      bottom: 4px; }
+
+  .primary-nav-wrapper {
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 15px; }
+    .primary-nav-wrapper h1 {
+      height: 50px; }
+    .primary-nav-wrapper .activ8-logo {
+      width: 200px;
+      margin-right: 0; }
+    .primary-nav-wrapper .primary-nav {
+      display: block;
+      bottom: 10px; }
+    .primary-nav-wrapper li {
+      font-size: 12px;
+      margin-right: 6px; }
+
+  #aboutUs {
+    height: 550px; }
+    #aboutUs .about-us-copy {
+      display: block;
+      width: 100%;
+      top: 0%;
+      transform: translateY(0%); }
+    #aboutUs img {
+      float: none;
+      width: 100%;
+      max-width: 450px;
+      padding-top: 20px;
+      top: 0;
+      transform: translateY(0%); }
+
+  #whatWeDo .upper-copy {
+    display: block;
+    padding: 0;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 27px; }
+  #whatWeDo img {
+    padding: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 400px; }
+  #whatWeDo .center-copy {
+    display: none; }
+
+  #ourClients .client-copy {
+    text-align: center;
+    margin-bottom: 20px; }
+  #ourClients img {
+    padding: 5px;
+    width: 125px; }
+
+  #contact {
+    height: 690px; }
+    #contact .copy-and-social-wrapper {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+      min-width: 274px;
+      margin-bottom: 30px; }
+    #contact .contact-social-wrapper {
+      margin-top: 25px; }
+      #contact .contact-social-wrapper img {
+        margin-right: 12px;
+        width: 40px; }
+    #contact form {
+      display: block;
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 100%; }
+      #contact form input {
+        font-size: 14px;
+        height: 35px;
+        margin: 0 0 20px 0;
+        max-width: 400px;
+        padding-left: 10px;
+        width: 95%; }
+      #contact form textarea {
+        height: 120px;
+        max-width: 400px;
+        margin-bottom: 20px;
+        padding: 10px 0 0 10px;
+        width: 95%; }
+
+  footer {
+    font-size: 12px; }
+    footer p {
+      display: inline-block;
+      font-size: 12px; }
+    footer .footer-nav {
+      display: block;
+      float: none;
+      position: relative;
+      top: 5px; }
+      footer .footer-nav li {
+        padding: 0 2px; } }
+@media screen and (max-width: 350px) {
+  section, footer {
+    padding: 27px 32px; }
+
+  p {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .contact-us-background {
+    height: 18px;
+    padding-top: 18px;
+    padding-bottom: 15px; }
+    .contact-us-background .email {
+      margin-right: 5px; }
+    .contact-us-background img {
+      width: 17px; }
+    .contact-us-background .phone img {
+      top: 0; }
+    .contact-us-background p {
+      font-size: 12px; }
+
+  .primary-nav-wrapper .activ8-logo {
+    width: 225px; }
+  .primary-nav-wrapper .primary-nav {
+    bottom: 12px; }
+  .primary-nav-wrapper li {
+    font-size: 9.4px;
+    margin-right: 6px; }
+
+  #aboutUs {
+    height: 530px; }
+    #aboutUs img {
+      width: 100%;
+      min-width: 200px;
+      padding-top: 30px;
+      top: 0;
+      transform: translateY(0%); }
+
+  #whatWeDo h1 {
+    font-size: 25px; }
+  #whatWeDo p {
+    font-size: 14px;
+    line-height: 20px; }
+  #whatWeDo img {
+    padding: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 400px; }
+  #whatWeDo .center-copy {
+    display: none; }
+
+  #ourClients h1 {
+    font-size: 24px; }
+  #ourClients p {
+    font-size: 13.2px; }
+  #ourClients .client-copy {
+    text-align: center;
+    margin-bottom: 20px; }
+  #ourClients img {
+    padding: 5px;
+    width: 115px; }
+
+  footer {
+    font-size: 12px; }
+    footer .footer-nav {
+      display: block;
+      float: none;
+      position: relative;
+      top: 6px; }
+      footer .footer-nav li {
+        font-size: 11.4px;
+        padding: 0 1px; } }
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*# sourceMappingURL=main.css.map */
