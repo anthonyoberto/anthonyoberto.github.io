@@ -1,11 +1,19 @@
 // bower:scss
 // endbower
 
+//BREAKPOINTS
 $break-lrg: 1263px;
-$break-form: 1007px;
-$break-med: 978px;
+$break-form-lrg: 1021px;
+$break-med: 1010px;
+$break-form-med: 820px;
 $break-sm: 720px;
-$break-xs: 350px;
+$break-sm-footer-tweak: 600px;
+$break-sm-clients-tweak: 588px;
+$break-sm-tweak: 550px;
+$break-xs: 35020;
+
+//VARIABLES
+$link-color: #f48119;
 
 body {
   color: #333;
@@ -13,18 +21,19 @@ body {
   margin: 0 auto;
 }
 
-section, footer {
-  padding: 30px 50px;
+section {
+  padding: 90px 80px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 47px;
   font-weight: 400;
   display: inline-block;
   margin: 0;
 }
 
 p {
+  color: #666666;
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 0;
@@ -36,20 +45,90 @@ ul {
 }
 
 a {
+  color: $link-color;
   text-decoration: none;
 }
 
+// Fixed Nav //
+
+.primary-nav-wrapper {
+  background-color: #fff;
+  height: 75px;
+  padding-top: 26px;
+  padding-bottom: 6px;
+  position: absolute;
+  top: 49px;
+  width: 100%;
+  z-index: 1;
+
+  h1 {
+    height: 67px;
+  }
+
+  .activ8-logo {
+    margin-right: 30px;
+    padding-left: 50px;
+    width: 330px;
+  }
+
+  .primary-nav {
+    bottom: 10px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 40px;
+    text-transform: uppercase;
+  }
+
+  li:last-of-type {
+    margin-right: 0;
+  }
+
+}
+
+// Background Wrappers
+
+.intro-wrapper, #whatWeDo, #ourClients, #contact {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.intro-wrapper:before {
+    content: "";
+    height: 200%;
+    position: absolute;
+    top: -28%;
+    width: 102%;
+    z-index: -1;
+    background: url("../images/header-ring-green-v2.png") no-repeat;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background-position: center;
+    background-size: 115%;
+  }
+
 .contact-us-background {
-  background-color: #dadada;
-  height: 25px;
-  padding-top: 18px;
-  padding-bottom: 15px;
+  background-color: transparent;
+  padding-top: 12px;
+  padding-bottom: 8px;
 
   .contact-us-wrapper {
     text-align: right;
     width: 100%;
-    max-width: 1280px;
+    // max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+    right: 75px;
   }
 
   div {
@@ -61,124 +140,135 @@ a {
   }
 
   img {
-    width: 25px;
+    width: 23px;
     margin-right: 6px;
   }
 
   .phone img {
       position: relative;
-      top: 2px;
+      width: 25px;
+      top: 1px;
   }
 
   p {
     display: inline-block;
-    font-size: 13px;
+    font-size: 13.5px;
     margin: 0;
     position: relative;
-    bottom: 5px;
-  }
-
-}
-
-.primary-nav-wrapper {
-  border-bottom: 1px solid #e6eaed;
-  height: 67px;
-  padding-top: 18px;
-  padding-bottom: 15px;
-
-  h1 {
-    height: 67px;
-  }
-
-  .activ8-logo {
-    width: 370px;
-    margin-right: 30px;
-  }
-
-  .primary-nav {
-    display: inline-block;
-    list-style: none;
-    position: relative;
-    bottom: 10px;
-  }
-
-  li {
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 30px;
-    text-transform: uppercase;
-  }
-
-  li:last-of-type {
-    margin-right: 0;
+    bottom: 4px;
   }
 
 }
 
 #aboutUs {
-  height: 452px;
+  height: 662px;
   max-width: 1280px;
   margin: 0 auto;
 
   .about-us-copy {
-    display: inline-block;
-    width: 36%;
-    max-width: 430px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    max-width: 600px;
+    // width: 47%;
+    // max-width: 600px;
     position: relative;
-    top: 47%;
-    transform: translateY(-53%);
+    top: 55%;
+    transform: translateY(-55%);
   }
   
   h1 {
+    color: #f89d43;
   }
 
   p {
   }
+}
 
-  img {
-    float: right;
-    width: 60%;
-    max-width: 667px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.section-wrapper {
+  max-width: 1280px;
+  padding: 100px 80px;
+  text-align: center;
+}
+
+#whatWeDo:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: url("../images/services-ring-orange.png") no-repeat;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: 120%;
 }
 
 #whatWeDo {
-  background-color: #dadada;
-
-  .section-wrapper {
-    max-width: 1280px;
-    text-align: center;
-  }
-
-  .upper-copy {
-    display: none;
-  }
-
-  img {
-    padding: 10px;
-    width: 365px;
-  }
+  background-color: transparent;
 
   .center-copy {
-    display: inline-block;
-    padding: 10px;
-    padding-bottom: 0;
+    display: block;
     position: relative;
-    bottom: 37px;
-    width: 365px;
+    margin: 0 auto;
+    width: 780px;
+
+    h1 {
+      color: #cadc59;
+    }
   }
+
+  .services-wrapper {
+    margin-top: 50px;
+
+    .col {
+      display: inline-block;
+      width: 32%;
+    }
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 22px;
+      width: 100%;
+    }
+  }
+
+}
+
+#ourClients:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: url("../images/clients-ring-red.png") no-repeat;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: 140%;
 }
 
 #ourClients {
-  border-bottom: 1px solid #e6eaed;
 
   .client-copy {
     text-align: center;
     margin-bottom: 30px;
     max-width: 1250px;
+  }
+
+  h1 {
+    color: #ff7a7a;
   }
 
   .client-logo-grid {
@@ -192,36 +282,64 @@ a {
 
 }
 
+#contact:before {
+  content: "";
+  height: 120%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: url("../images/contact-ring-blue.png") no-repeat;
+  background-color: #0080b2;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center bottom;
+  background-size: 88%;
+}
+
 #contact {
-  height: 452px;
-  position: relative;
+  padding-bottom: 45px;
 
   .copy-and-social-wrapper {
-    display: inline-block;
-    width: 29%;
+    display: block;
     max-width: 340px;
     min-width: 274px;
+    text-align: left;
+    width: 29%;
   }
 
-  .contact-social-wrapper {
+  h1, p {
+    color: #fff;
+  }
+
+  .upper-contact-social-wrapper {
     margin-top: 47px;
+    margin-left: -14px;
 
     img {
       margin-right: 12px;
-      width: 40px;
+      width: 35px;
     }
+  }
+
+  .lower-contact-social-wrapper {
+    display: none;
   }
 
   form {
     display: inline-block;
     position: absolute;
     right: 50px;
-    top: 34px;
+    text-align: left;
+    top: 98px;
     width: 50%;
 
     input {
-      border: 1px solid #000;
-      color: #444444;
+      background-color: #0091be;
+      border: 1px solid #fff;
+      color: #fff;
       font-size: 15px;
       height: 35px;
       margin: 0 15px 20px 0;
@@ -230,7 +348,9 @@ a {
     }
 
     textarea {
-      color: #444444;
+      background-color: #0091be;
+      border: 1px solid #fff;
+      color: #fff;
       font-size: 15px;
       height: 161px;
       margin: 0 0 15px 0;
@@ -239,8 +359,8 @@ a {
     }
 
     .send-button {
-      background-color: #444444;
-      color: #fff;
+      background-color: #fff;
+      color: #0091be;
       cursor: pointer;
       letter-spacing: .75px;
       text-transform: uppercase;
@@ -250,15 +370,16 @@ a {
     }
 
     .send-button:hover {
-      background-color: #c9c9c9;
-      color: #444444;
+      background-color: #0091be;
+      color: #fff;
     }
   }
 }
 
 footer {
-  background-color: #dadada;
+  background-color: #fff;
   font-size: 14px;
+  padding: 30px 80px;
 
   p {
     display: inline-block;
@@ -266,21 +387,29 @@ footer {
     margin-top: 0;
   }
 
+  a {
+    color: #4f4f4f;
+  }
+
   .footer-nav {
     display: inline-block;
     float: right;
     position: relative;
-    top: 3.5px;
+    top: 2.7px;
 
     li {
       display: inline-block;
       list-style: none;
-      padding: 0 4px;
+      padding: 0 14px;
     }
   }
 }
 
 @media screen and (max-width: $break-lrg) {
+
+  h1 {
+    font-size: 40px;
+  }
 
   #whatWeDo {
 
@@ -296,26 +425,21 @@ footer {
       padding: 10px;
       padding-bottom: 0;
       bottom: 12px;
-      width: 270px;
     }
 
     h1 {
-      font-size: 30px; 
     }
 
     p {
-      font-size: 13.3px;
-      line-height: 19px;
-      margin-top: 5px;
+      margin-top: 12px;
     }
   }
 
 }
 
-@media screen and (max-width: $break-form) {
+@media screen and (max-width: $break-form-lrg) {
 
   #contact {
-    height: 415px;
 
     .copy-and-social-wrapper {
       width: 29%;
@@ -323,7 +447,7 @@ footer {
       min-width: 274px;
     }
 
-    .contact-social-wrapper {
+    .upper-contact-social-wrapper {
 
       img {
       }
@@ -332,7 +456,7 @@ footer {
     form {
       position: absolute;
       right: 10px;
-      top: 34px;
+      top: 92px;
       width: 50%;
 
       input {
@@ -341,7 +465,6 @@ footer {
       }
 
       textarea {
-        color: #444444;
         font-size: 15px;
         height: 161px;
         margin: 0 0 15px 0;
@@ -350,19 +473,12 @@ footer {
       }
 
       .send-button {
-        background-color: #444444;
-        color: #fff;
-        cursor: pointer;
         letter-spacing: .75px;
-        text-transform: uppercase;
         width: 150px;
         height: 38px;
-        transition: .75s background-color, .75s color;
       }
 
       .send-button:hover {
-        background-color: #c9c9c9;
-        color: #444444;
       }
     }
   }
@@ -378,13 +494,15 @@ footer {
   .primary-nav-wrapper {
     height: 67px;
     padding-bottom: 40px;
+    text-align: center;
 
     h1 {
       height: 67px;
     }
 
     .activ8-logo {
-      width: 340px;
+      width: 300px;
+      padding-left: 0;
       margin-right: 0;
     }
 
@@ -393,6 +511,7 @@ footer {
       display: block;
       font-size: 15px;
       padding-top: 5px;
+      margin-left: 0;
     }
 
     li {
@@ -408,12 +527,21 @@ footer {
 
   }
 
+  .intro-wrapper:before
+    {
+      height: 160%;
+      width: 102%;
+      background: url("../images/header-ring-green-v2.png") no-repeat;
+      background-position: center;
+      background-size: 120%;
+    }
+
   #aboutUs {
-    height: 360px;
+    height: 620px;
 
     .about-us-copy {
-
       width: 45%;
+      min-width: 377px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -441,10 +569,17 @@ footer {
     .section-wrapper {
     }
 
-    .upper-copy {
-      display: block;
+    .services-wrapper {
+      
+      p {
+        font-size: 19px;
+      }
+    }
+
+    .center-copy {
       padding: 0;
-      width: 55%;
+      width: 65%;
+      min-width: 455px;
       margin: 0 auto;
       margin-bottom: 27px;
     }
@@ -454,178 +589,46 @@ footer {
       width: 40%;
     }
 
-    .center-copy {
-      display: none;
-    }
+  }
 
-    h1 {
-      font-size: 30px; 
-    }
+  #ourClients:before {
+    background-size: 183%;
   }
 
 }
 
+@media screen and (max-width: $break-form-med) {
 
-@media screen and (max-width: $break-sm) {
-
-  section, footer {
-    padding: 30px 35px;  
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .contact-us-background {
-    height: 25px;
-    padding-top: 18px;
-    padding-bottom: 15px;
-
-    .email {
-      margin-right: 15px;
-    }
-
-    img {
-      width: 20px;
-    }
-
-    .phone img {
-        top: 0;
-    }
-
-    p {
-      font-size: 13px;
-      margin: 0;
-      position: relative;
-      bottom: 4px;
-    }
-
-  }
-
-  .primary-nav-wrapper {
-    height: 60px;
-    padding-top: 18px;
-    padding-bottom: 15px;
-
-    h1 {
-      height: 50px;
-    }
-
-    .activ8-logo {
-      width: 200px;
-      margin-right: 0;
-    }
-
-    .primary-nav {
-      display: block;
-      bottom: 10px;
-    }
-
-    li {
-      font-size: 12px;
-      margin-right: 6px;
-    }
-
-    li:last-of-type {
-    }
-
-  }
-
-  #aboutUs {
-    height: 550px;
-
-    .about-us-copy {
-      display: block;
-      width: 100%;
-      top: 0%;
-      transform: translateY(0%);
-    }
-    
-    h1 {
-    }
-
-    p {
-    }
-
-    img {
-      float: none;
-      width: 100%;
-      max-width: 450px;
-      padding-top: 20px;
-      top: 0;
-      transform: translateY(0%);
-    }
-  }
-
-  #whatWeDo {
-
-    .section-wrapper {
-    }
-
-    p {
-
-    }
-
-    .upper-copy {
-      display: block;
-      padding: 0;
-      width: 90%;
-      text-align: left;
-      margin: 0 auto;
-      margin-bottom: 27px;
-    }
-
-    img {
-      padding: 0;
-      padding-bottom: 15px;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .center-copy {
-      display: none;
-    }
-  }
-
-  #ourClients {
-
-    .client-copy {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .client-logo-grid {
-    }
-
-    img {
-      padding: 5px;
-      width: 125px;
-    }
-
+  #contact:before {
+    background-size: 150%;
+    background-position: center;
+    height: 100%;
   }
 
   #contact {
-    height: 690px;
+    padding-bottom: 0;
 
     .copy-and-social-wrapper {
       display: block;
       width: 90%;
       max-width: 500px;
       min-width: 274px;
+      margin: 0 auto;
       margin-bottom: 30px;
+      text-align: center;
     }
 
-    .contact-social-wrapper {
+    .upper-contact-social-wrapper {
+      display: none;
+    }
+
+    .lower-contact-social-wrapper {
+      display: block;
       margin-top: 25px;
 
       img {
-        margin-right: 12px;
-        width: 40px;
+        margin-right: 15px;
+        width: 30px;
       }
     }
 
@@ -633,6 +636,7 @@ footer {
       display: block;
       position: relative;
       right: 0;
+      text-align: center;
       top: 0;
       width: 100%;
 
@@ -662,7 +666,198 @@ footer {
   }
 
   footer {
+
+    p {
+      font-size: 13px;
+    }
+
+    .footer-nav {
+
+      li {
+        font-size: 12px;
+        padding: 0 9px;
+        top: 2.2px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $break-sm) {
+
+  section, footer {
+    padding: 70px 35px;  
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .intro-wrapper:before
+    {
+      height: 169%;
+      width: 102%;
+      background: url("../images/header-ring-green-v2.png") no-repeat;
+      background-position: center;
+      background-size: 140%;
+    }
+
+  .contact-us-background {
+    height: 25px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+
+    .contact-us-wrapper {
+      text-align: center;
+      right: 0;
+    }
+
+    .email {
+      margin-right: 15px;
+    }
+
+    img {
+      width: 20px;
+    }
+
+    .phone img {
+        top: 0;
+    }
+
+    p {
+      font-size: 13px;
+      margin: 0;
+      position: relative;
+      bottom: 4px;
+    }
+
+  }
+
+  .primary-nav-wrapper {
+    height: 75px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+
+    h1 {
+      height: 50px;
+    }
+
+    .activ8-logo {
+      width: 220px;
+      margin-right: 0;
+    }
+
+    .primary-nav {
+      display: block;
+      bottom: 5px;
+    }
+
+    li {
+      font-size: 11px;
+      margin-right: 15px;
+    }
+
+    li:last-of-type {
+    }
+
+  }
+
+  #aboutUs {
+    height: 550px;
+
+    .about-us-copy {
+      display: block;
+      width: 56%;
+      min-width: 250px;
+      top: 30%;
+      transform: translateY(0%);
+    }
+    
+    h1 {
+    }
+
+    p {
+    }
+
+    img {
+      float: none;
+      width: 100%;
+      max-width: 450px;
+      padding-top: 20px;
+      top: 0;
+      transform: translateY(0%);
+    }
+  }
+
+  #whatWeDo {
+
+    .section-wrapper {
+    }
+
+    p {
+
+    }
+
+    .services-wrapper {
+      
+      .col {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        max-width: 280px;
+        width: 70%;
+      }
+
+      .col:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .center-copy {
+      padding: 0;
+      width: 80%;
+      margin-bottom: 27px;
+      min-width: 275px;
+    }
+
+    img {
+      padding: 0;
+      padding-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+  }
+
+  #whatWeDo:before {
+    background-size: 235%;
+  }
+
+  #ourClients {
+
+    .client-copy {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .client-logo-grid {
+    }
+
+    img {
+      padding: 5px;
+      width: 125px;
+    }
+
+  }
+
+  footer {
     font-size: 12px;
+    padding: 30px 35px;
 
     p {
       display: inline-block;
@@ -671,18 +866,102 @@ footer {
 
     .footer-nav {
       display: block;
-      float: none;
       position: relative;
-      top: 5px;
+      top: 3px;
 
       li {
-        padding: 0 2px;
+        padding: 0 7px;
       }
     }
   }
 
 }
 
+@media screen and (max-width: $break-sm-clients-tweak) {
+
+  #ourClients:before {
+    background-size: 320%;
+  }
+
+}
+
+@media screen and (max-width: $break-sm-footer-tweak) {
+
+  footer {
+    font-size: 12px;
+    padding: 30px 35px;
+
+    p {
+      display: block;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: block;
+      position: relative;
+      float: none;
+      text-align: center;
+      top: 3px;
+      margin-bottom: 10px;
+
+      li {
+        padding: 0 7px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $break-sm-tweak) {
+
+  .intro-wrapper:before {
+    height: 160%;
+    width: 102%;
+    background: url("../images/header-ring-green-v2.png") no-repeat;
+    background-position: center;
+    background-size: 195%;
+  }
+
+  #aboutUs {
+    height: 662px;
+
+    .about-us-copy {
+      top: 24%;
+    }
+  }
+
+  .section-wrapper {
+    padding: 70px 35px;
+  }
+
+  #whatWeDo {
+
+
+    .center-copy {
+      min-width: 285px;
+    }
+
+    .services-wrapper {
+      
+      .col {
+      
+      }
+
+    }
+  
+  }
+
+
+  #whatWeDo:before {
+    background-size: 300%;
+  }
+
+  #contact:before {
+    background-size: 200%;
+  }
+
+}
 
 @media screen and (max-width: $break-xs) {
 
@@ -746,10 +1025,6 @@ footer {
   }
 
   #whatWeDo {
-
-    h1 {
-      font-size: 25px;
-    }
 
     p {
       font-size: 14px;
