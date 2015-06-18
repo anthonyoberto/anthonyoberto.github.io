@@ -1,0 +1,764 @@
+@-webkit-keyframes bgrdRotate {
+  0% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+@keyframes bgrdRotate {
+  0% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+@-webkit-keyframes socialWiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+@keyframes socialWiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto; }
+
+section {
+  padding: 90px 80px; }
+
+h1 {
+  font-size: 47px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0; }
+
+p {
+  color: #666666;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #f48119;
+  text-decoration: none; }
+
+.primary-nav-wrapper {
+  background-color: #fff;
+  height: 53px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+  position: absolute;
+  top: 46px;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  transition-property: height, padding-top, padding-bottom; }
+  .primary-nav-wrapper h1 {
+    font-size: 41px;
+    height: 53px; }
+  .primary-nav-wrapper .activ8-logo {
+    margin-right: 30px;
+    padding-left: 50px;
+    width: 300px;
+    transition: width 0.3s ease-in-out; }
+  .primary-nav-wrapper .primary-nav {
+    bottom: 8px;
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    position: relative; }
+  .primary-nav-wrapper li {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 40px;
+    text-transform: uppercase; }
+  .primary-nav-wrapper li:last-of-type {
+    margin-right: 0; }
+
+.primary-nav-wrapper.primary-nav-wrapper-shrink {
+  height: 35px;
+  opacity: .93;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: fixed;
+  top: 0; }
+  .primary-nav-wrapper.primary-nav-wrapper-shrink h1 {
+    height: 35px; }
+  .primary-nav-wrapper.primary-nav-wrapper-shrink .activ8-logo {
+    margin-right: 30px;
+    padding-left: 50px;
+    padding-bottom: 3px;
+    width: 200px; }
+
+.intro-wrapper, #whatWeDo, #ourClients, #contact {
+  position: relative;
+  overflow: hidden;
+  padding: 0; }
+
+.intro-background {
+  content: "";
+  height: 200%;
+  position: absolute;
+  top: -28%;
+  left: -2%;
+  width: 105%;
+  z-index: -1;
+  background: url("../images/header-ring-green-v2.png") no-repeat;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: 113%; }
+
+.contact-us-background {
+  background-color: transparent;
+  padding-top: 12px;
+  padding-bottom: 8px; }
+  .contact-us-background .contact-us-wrapper {
+    text-align: right;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: 75px; }
+  .contact-us-background div {
+    display: inline-block; }
+  .contact-us-background .email {
+    margin-right: 20px; }
+  .contact-us-background img {
+    width: 23px;
+    margin-right: 6px; }
+  .contact-us-background .phone img {
+    position: relative;
+    width: 25px;
+    top: 1px; }
+  .contact-us-background p {
+    display: inline-block;
+    font-size: 13.5px;
+    margin: 0;
+    position: relative;
+    bottom: 4px; }
+
+#aboutUs {
+  height: 662px;
+  max-width: 1280px;
+  margin: 0 auto; }
+  #aboutUs .about-us-copy {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+        -ms-transform: translateY(-55%);
+            transform: translateY(-55%); }
+  #aboutUs h1 {
+    color: #f89d43; }
+
+.section-wrapper {
+  max-width: 1280px;
+  padding: 100px 80px;
+  text-align: center;
+  margin: 0 auto; }
+
+.what-we-do-background {
+  content: "";
+  height: 118%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: url("../images/services-ring-orange.png") no-repeat;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background-position: center;
+  background-size: 120%; }
+
+#whatWeDo {
+  background-color: transparent; }
+  #whatWeDo .center-copy {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 780px; }
+    #whatWeDo .center-copy h1 {
+      color: #cadc59; }
+  #whatWeDo .services-wrapper {
+    margin-top: 50px; }
+    #whatWeDo .services-wrapper .col {
+      display: inline-block;
+      width: 32%; }
+    #whatWeDo .services-wrapper img {
+      width: 50%;
+      max-width: 150px; }
+    #whatWeDo .services-wrapper p {
+      display: inline-block;
+      font-size: 22px;
+      width: 100%; }
+
+.our-clients-background {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: url("../images/clients-ring-red.png") no-repeat;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: 140%; }
+
+#ourClients .client-copy {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 1250px; }
+#ourClients h1 {
+  color: #ff7a7a; }
+#ourClients .client-logo-grid {
+  text-align: center;
+  max-width: 1250px; }
+#ourClients img {
+  padding: 15px; }
+
+.contact-background-element {
+  content: "";
+  bottom: -10%;
+  height: 225%;
+  left: -5%;
+  position: absolute;
+  width: 109%;
+  z-index: -1;
+  background: url("../images/contact-ring-blue.png") no-repeat;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background-position: center;
+  background-size: 80%;
+  -webkit-animation: bgrdRotate 145s infinite linear;
+  animation: bgrdRotate 145s infinite linear; }
+
+.contact-background-color {
+  background-color: #0080b2;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+
+#contact {
+  height: 540px; }
+  #contact .copy-and-social-wrapper {
+    display: block;
+    max-width: 340px;
+    min-width: 274px;
+    text-align: left;
+    width: 29%; }
+  #contact h1, #contact p {
+    color: #fff; }
+  #contact .upper-contact-social-wrapper {
+    margin-top: 47px;
+    margin-left: -14px; }
+    #contact .upper-contact-social-wrapper img {
+      bottom: 0;
+      margin-right: 12px;
+      position: relative;
+      width: 35px;
+      transition: bottom 0.2s cubic-bezier(0, 0, 0.35, 1); }
+    #contact .upper-contact-social-wrapper img:hover {
+      bottom: 7px;
+      -webkit-animation: socialWiggle .28s 2 ease;
+      animation: socialWiggle .28s 2 ease; }
+  #contact .lower-contact-social-wrapper {
+    display: none; }
+  #contact form {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    text-align: left;
+    top: 98px;
+    width: 50%; }
+    #contact form input {
+      background-color: #0091be;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 15px;
+      height: 35px;
+      margin: 0 15px 20px 0;
+      padding-left: 10px;
+      width: 44%; }
+    #contact form textarea {
+      background-color: #0091be;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 15px;
+      height: 161px;
+      margin: 0 0 15px 0;
+      padding: 10px 0 0 10px;
+      width: 94.2%; }
+    #contact form .send-button {
+      background-color: #fff;
+      color: #0091be;
+      cursor: pointer;
+      letter-spacing: .75px;
+      text-transform: uppercase;
+      width: 150px;
+      height: 38px;
+      transition: .75s background-color, .75s color; }
+    #contact form .send-button:hover {
+      background-color: #0091be;
+      color: #fff; }
+
+footer {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 30px 80px; }
+  footer p {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0; }
+  footer a {
+    color: #4f4f4f; }
+  footer .footer-nav {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 2.7px; }
+    footer .footer-nav li {
+      display: inline-block;
+      list-style: none;
+      padding: 0 14px; }
+
+@media screen and (min-width: 1400px) {
+  .intro-background {
+    background-size: 1660px; } }
+@media screen and (max-width: 1263px) {
+  h1 {
+    font-size: 40px; }
+
+  #whatWeDo img {
+    padding: 10px;
+    width: 270px; }
+  #whatWeDo .center-copy {
+    padding: 10px;
+    padding-bottom: 0;
+    bottom: 12px; }
+  #whatWeDo p {
+    margin-top: 12px; } }
+@media screen and (max-width: 1021px) {
+  #contact .copy-and-social-wrapper {
+    width: 29%;
+    max-width: 340px;
+    min-width: 274px; }
+  #contact form {
+    position: absolute;
+    right: 10px;
+    top: 92px;
+    width: 50%; }
+    #contact form input {
+      font-size: 15px;
+      width: 40%; }
+    #contact form textarea {
+      font-size: 15px;
+      height: 161px;
+      margin: 0 0 15px 0;
+      padding: 10px 0 0 10px;
+      width: 86.6%; }
+    #contact form .send-button {
+      letter-spacing: .75px;
+      width: 150px;
+      height: 38px; } }
+@media screen and (max-width: 1010px) {
+  h1 {
+    font-size: 32px; }
+
+  .primary-nav-wrapper {
+    height: 78px;
+    padding-top: 24px;
+    padding-bottom: 26px;
+    text-align: center; }
+    .primary-nav-wrapper .activ8-logo {
+      padding-left: 0;
+      margin-right: 0; }
+    .primary-nav-wrapper .primary-nav {
+      bottom: 0;
+      display: block;
+      font-size: 15px;
+      padding-top: 5px;
+      margin-left: 0; }
+    .primary-nav-wrapper li {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 30px;
+      text-transform: uppercase; }
+    .primary-nav-wrapper li:last-of-type {
+      margin-right: 0; }
+
+  .primary-nav-wrapper.primary-nav-wrapper-shrink {
+    height: 58px; }
+
+  .intro-background {
+    background: url("../images/header-ring-green-v2.png") no-repeat;
+    background-position: center;
+    background-size: 120%;
+    height: 180%;
+    left: -7%;
+    width: 116%; }
+
+  #aboutUs {
+    height: 620px; }
+    #aboutUs .about-us-copy {
+      width: 45%;
+      min-width: 377px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    #aboutUs img {
+      width: 50%;
+      min-width: 320px; }
+
+  #whatWeDo p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 12px; }
+  #whatWeDo .services-wrapper p {
+    font-size: 19px; }
+  #whatWeDo .center-copy {
+    padding: 0;
+    width: 65%;
+    min-width: 455px;
+    margin: 0 auto;
+    margin-bottom: 27px; }
+  #whatWeDo img {
+    padding: 10px;
+    width: 40%; }
+
+  .our-clients-background {
+    background-size: 183%; } }
+@media screen and (max-width: 820px) {
+  .contact-background-element {
+    background-size: 110%;
+    bottom: -20%;
+    height: 150%;
+    width: 150%;
+    left: -25%; }
+
+  #contact {
+    height: 802px;
+    padding-bottom: 0; }
+    #contact .copy-and-social-wrapper {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+      min-width: 274px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center; }
+    #contact .upper-contact-social-wrapper {
+      display: none; }
+    #contact .lower-contact-social-wrapper {
+      display: block;
+      margin-top: 25px; }
+      #contact .lower-contact-social-wrapper img {
+        margin-right: 15px;
+        width: 30px; }
+    #contact form {
+      display: block;
+      position: relative;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 100%; }
+      #contact form input {
+        font-size: 14px;
+        height: 35px;
+        margin: 0 0 20px 0;
+        max-width: 400px;
+        padding-left: 10px;
+        width: 95%; }
+      #contact form textarea {
+        height: 120px;
+        max-width: 400px;
+        margin-bottom: 20px;
+        padding: 10px 0 0 10px;
+        width: 95%; }
+
+  footer p {
+    font-size: 13px; }
+  footer .footer-nav li {
+    font-size: 12px;
+    padding: 0 9px;
+    top: 2.2px; } }
+@media screen and (max-width: 720px) {
+  section, footer {
+    padding: 70px 35px; }
+
+  h1 {
+    font-size: 26px; }
+
+  p {
+    font-size: 13px;
+    line-height: 20px; }
+
+  .intro-background {
+    background: url("../images/header-ring-green-v2.png") no-repeat;
+    background-position: center;
+    background-size: 140%;
+    height: 183%;
+    left: -8%;
+    width: 119%; }
+
+  .contact-us-background {
+    height: 25px;
+    padding-top: 13px;
+    padding-bottom: 7px; }
+    .contact-us-background .contact-us-wrapper {
+      text-align: center;
+      right: 0; }
+    .contact-us-background .email {
+      margin-right: 15px; }
+    .contact-us-background img {
+      width: 20px; }
+    .contact-us-background .phone img {
+      top: 0; }
+    .contact-us-background p {
+      font-size: 13px;
+      margin: 0;
+      position: relative;
+      bottom: 4px; }
+
+  .primary-nav-wrapper {
+    height: 60px;
+    padding-top: 18px;
+    padding-bottom: 18px; }
+    .primary-nav-wrapper h1 {
+      height: 39px; }
+    .primary-nav-wrapper .activ8-logo {
+      width: 220px;
+      margin-right: 0; }
+    .primary-nav-wrapper .primary-nav {
+      display: block;
+      bottom: 5px; }
+    .primary-nav-wrapper li {
+      font-size: 11px;
+      margin-right: 15px; }
+
+  #aboutUs {
+    height: 550px; }
+    #aboutUs .about-us-copy {
+      display: block;
+      width: 56%;
+      min-width: 250px;
+      top: 30%;
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); }
+    #aboutUs img {
+      float: none;
+      width: 100%;
+      max-width: 450px;
+      padding-top: 20px;
+      top: 0;
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); }
+
+  #whatWeDo .services-wrapper .col {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 280px;
+    width: 70%; }
+  #whatWeDo .services-wrapper .col:last-of-type {
+    margin-bottom: 0; }
+  #whatWeDo .center-copy {
+    padding: 0;
+    width: 80%;
+    margin-bottom: 27px;
+    min-width: 275px; }
+  #whatWeDo img {
+    padding: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 400px; }
+
+  .what-we-do-background {
+    background-size: 235%; }
+
+  #ourClients .client-copy {
+    text-align: center;
+    margin-bottom: 20px; }
+  #ourClients img {
+    padding: 5px;
+    width: 125px; }
+
+  footer {
+    font-size: 12px;
+    padding: 30px 35px; }
+    footer p {
+      display: inline-block;
+      font-size: 12px; }
+    footer .footer-nav {
+      display: block;
+      position: relative;
+      top: 3px; }
+      footer .footer-nav li {
+        padding: 0 7px; } }
+@media screen and (max-width: 588px) {
+  .our-clients-background {
+    background-size: 320%; } }
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 12px;
+    padding: 30px 35px; }
+    footer p {
+      display: block;
+      font-size: 12px;
+      text-align: center; }
+    footer .footer-nav {
+      display: block;
+      position: relative;
+      float: none;
+      text-align: center;
+      top: 3px;
+      margin-bottom: 10px; }
+      footer .footer-nav li {
+        padding: 0 7px; } }
+@media screen and (max-width: 550px) {
+  .intro-background {
+    background: url("../images/header-ring-green-v2.png") no-repeat;
+    background-position: center;
+    background-size: 140%;
+    height: 175%;
+    left: -29%;
+    width: 160%; }
+
+  #aboutUs {
+    height: 550px; }
+    #aboutUs .about-us-copy {
+      top: 30%; }
+
+  .section-wrapper {
+    padding: 70px 35px; }
+
+  #whatWeDo .center-copy {
+    min-width: 285px; }
+
+  .what-we-do-background {
+    background-size: 300%; }
+
+  .contact-background-element {
+    background-size: 100%;
+    bottom: -30%;
+    height: 170%;
+    width: 210%;
+    left: -55%; } }
+@media screen and (max-width: 350px) {
+  section, footer {
+    padding: 27px 32px; }
+
+  p {
+    font-size: 13bowpx;
+    line-height: 20px; }
+
+  .contact-us-background {
+    height: 18px;
+    padding-top: 18px;
+    padding-bottom: 15px; }
+    .contact-us-background .email {
+      margin-right: 5px; }
+    .contact-us-background img {
+      width: 17px; }
+    .contact-us-background .phone img {
+      top: 0; }
+    .contact-us-background p {
+      font-size: 12px; }
+
+  .primary-nav-wrapper .activ8-logo {
+    width: 225px; }
+  .primary-nav-wrapper .primary-nav {
+    bottom: 12px; }
+  .primary-nav-wrapper li {
+    font-size: 9.4px;
+    margin-right: 6px; }
+
+  #aboutUs {
+    height: 530px; }
+    #aboutUs img {
+      width: 100%;
+      min-width: 200px;
+      padding-top: 30px;
+      top: 0;
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); }
+
+  #whatWeDo p {
+    font-size: 14px;
+    line-height: 20px; }
+  #whatWeDo img {
+    padding: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 400px; }
+  #whatWeDo .center-copy {
+    display: none; }
+
+  #ourClients h1 {
+    font-size: 24px; }
+  #ourClients p {
+    font-size: 13.2px; }
+  #ourClients .client-copy {
+    text-align: center;
+    margin-bottom: 20px; }
+  #ourClients img {
+    padding: 5px;
+    width: 115px; }
+
+  footer {
+    font-size: 12px; }
+    footer .footer-nav {
+      display: block;
+      float: none;
+      position: relative;
+      top: 6px; }
+      footer .footer-nav li {
+        font-size: 11.4px;
+        padding: 0 1px; } }
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
