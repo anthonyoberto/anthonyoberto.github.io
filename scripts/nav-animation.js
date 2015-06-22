@@ -1,3 +1,4 @@
+
 var navAnimation = (function() {
 
 	var docElem = document.documentElement,
@@ -46,10 +47,3 @@ $('a').click(function() {
     });
     return false;
 });
-
-var a = 10;
-function doStuff() {
-  var a = "cats"; // ok, but don't!
-  console.log(a);
-}
-console.log(a);
