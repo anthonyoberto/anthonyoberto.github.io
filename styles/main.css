@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,400italic);
+@font-face {
+  font-family: 'BentonSans Bold';
+  src: url("fonts/BentonSans_Bold.otf");
+  /* everyone else take this */ }
+@font-face {
+  font-family: 'BentonSans Comp Medium';
+  src: url("fonts/BentonSans_Comp_Medium.otf");
+  /* everyone else take this */ }
+@font-face {
+  font-family: 'BentonSans Comp Bold';
+  src: url("fonts/BentonSans_Comp_Bold.otf");
+  /* everyone else take this */ }
 @-webkit-keyframes bgrdRotate {
   0% {
     -webkit-transform: rotate(359deg);
@@ -46,7 +59,6 @@
             transform: rotate(0deg); } }
 body {
   color: #333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto; }
 
 section {
@@ -54,6 +66,7 @@ section {
 
 h1 {
   font-size: 47px;
+  font-family: 'BentonSans Bold', helvetica, sans-serif;
   font-weight: 400;
   display: inline-block;
   margin: 0; }
@@ -61,6 +74,8 @@ h1 {
 p {
   color: #666666;
   font-size: 15px;
+  font-family: 'Cabin', helvetica, sans-serif;
+  font-weight: 400;
   line-height: 22px;
   margin-bottom: 0; }
 
@@ -68,9 +83,37 @@ ul {
   margin: 0;
   padding: 0; }
 
+li {
+  font-family: 'BentonSans Comp Medium', helvetica, sans-serif;
+  font-weight: 400; }
+
 a {
   color: #f48119;
   text-decoration: none; }
+
+::-moz-selection {
+  background: transparent; }
+
+::selection {
+  background: transparent; }
+
+h1::-moz-selection {
+  background: #F2F7D5; }
+
+h1::selection {
+  background: #F2F7D5; }
+
+p::-moz-selection {
+  background: #F2F7D5; }
+
+p::selection {
+  background: #F2F7D5; }
+
+a::-moz-selection {
+  background: #F2F7D5; }
+
+a::selection {
+  background: #F2F7D5; }
 
 .primary-nav-wrapper {
   background-color: #fff;
@@ -99,7 +142,9 @@ a {
     position: relative; }
   .primary-nav-wrapper li {
     display: inline-block;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.7px;
     margin-right: 40px;
     text-transform: uppercase; }
   .primary-nav-wrapper li:last-of-type {
@@ -127,13 +172,13 @@ a {
 
 .intro-background {
   content: "";
-  height: 200%;
+  height: 183%;
   position: absolute;
   top: -28%;
-  left: -2%;
+  left: -2.5%;
   width: 105%;
   z-index: -1;
-  background: url("../images/header-ring-green-v2.png") no-repeat;
+  background: url("../images/header-ring-green.svg") no-repeat;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -164,6 +209,7 @@ a {
   .contact-us-background p {
     display: inline-block;
     font-size: 13.5px;
+    letter-spacing: 0.4px;
     margin: 0;
     position: relative;
     bottom: 4px; }
@@ -198,7 +244,7 @@ a {
   position: absolute;
   width: 100%;
   z-index: -1;
-  background: url("../images/services-ring-orange.png") no-repeat;
+  background: url("../images/services-ring-orange.svg") no-repeat;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -224,7 +270,10 @@ a {
       max-width: 150px; }
     #whatWeDo .services-wrapper p {
       display: inline-block;
-      font-size: 22px;
+      font-family: 'BentonSans Comp Medium', helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+      letter-spacing: 0.7px;
       width: 100%; }
 
 .our-clients-background {
@@ -233,7 +282,7 @@ a {
   position: absolute;
   width: 100%;
   z-index: -1;
-  background: url("../images/clients-ring-red.png") no-repeat;
+  background: url("../images/clients-ring-red.svg") no-repeat;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -260,7 +309,7 @@ a {
   position: absolute;
   width: 109%;
   z-index: -1;
-  background: url("../images/contact-ring-blue.png") no-repeat;
+  background: url("../images/contact-ring-blue.svg") no-repeat;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -309,6 +358,11 @@ a {
     text-align: left;
     top: 98px;
     width: 50%; }
+    #contact form input, #contact form textarea {
+      font-family: 'Cabin', helvetica, sans-serif;
+      font-style: italic;
+      font-weight: 100;
+      letter-spacing: 0.8px; }
     #contact form input {
       background-color: #0091be;
       border: 1px solid #fff;
@@ -331,7 +385,11 @@ a {
       background-color: #fff;
       color: #0091be;
       cursor: pointer;
-      letter-spacing: .75px;
+      font-family: 'BentonSans Bold', helvetica, sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      letter-spacing: 0.75px;
+      line-height: 34px;
       text-transform: uppercase;
       width: 150px;
       height: 38px;
@@ -343,13 +401,14 @@ a {
 footer {
   background-color: #fff;
   font-size: 14px;
+  letter-spacing: 0.4px;
   padding: 30px 80px; }
   footer p {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 0; }
   footer a {
-    color: #4f4f4f; }
+    color: #626262; }
   footer .footer-nav {
     display: inline-block;
     float: right;
@@ -429,10 +488,9 @@ footer {
     height: 58px; }
 
   .intro-background {
-    background: url("../images/header-ring-green-v2.png") no-repeat;
     background-position: center;
     background-size: 120%;
-    height: 180%;
+    height: 166%;
     left: -7%;
     width: 116%; }
 
@@ -533,10 +591,8 @@ footer {
     line-height: 20px; }
 
   .intro-background {
-    background: url("../images/header-ring-green-v2.png") no-repeat;
     background-position: center;
     background-size: 140%;
-    height: 183%;
     left: -8%;
     width: 119%; }
 
@@ -658,11 +714,11 @@ footer {
         padding: 0 7px; } }
 @media screen and (max-width: 550px) {
   .intro-background {
-    background: url("../images/header-ring-green-v2.png") no-repeat;
+    background: url("../images/header-ring-green.svg") no-repeat;
     background-position: center;
-    background-size: 140%;
-    height: 175%;
-    left: -29%;
+    background-size: 130%;
+    height: 161%;
+    left: -31%;
     width: 160%; }
 
   #aboutUs {
