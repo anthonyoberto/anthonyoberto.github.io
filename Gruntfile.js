@@ -1,4 +1,4 @@
-// Generated on 2015-05-11 using
+// Generated on 2015-06-30 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -338,6 +338,23 @@ module.exports = function (grunt) {
       }
     },
 
+    // Generates a custom Modernizr build that includes only the tests you
+    // reference in your app
+    modernizr: {
+      dist: {
+        devFile: 'bower_components/modernizr/modernizr.js',
+        outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
+        files: {
+          src: [
+            '<%= config.dist %>/scripts/{,*/}*.js',
+            '<%= config.dist %>/styles/{,*/}*.css',
+            '!<%= config.dist %>/scripts/vendor/*'
+          ]
+        },
+        uglify: true
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -405,6 +422,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
+    'modernizr',
     'rev',
     'usemin',
     'htmlmin'
