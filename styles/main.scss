@@ -19,13 +19,17 @@ $blue: #22c1ee;
 }
 
 // SASS MIXIN
+// *Prefixes are unnecessary bc grunt runts Auto-Prefixer, which checks 
+// caniuse.com and applies necessary prefixes to your properties
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+// Also, border-radius doesn't need any prefixes
+
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//      -moz-border-radius: $radius;
+//       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
 
 // Selector properties are listed in ALPHABETICAL order 
 
@@ -52,6 +56,7 @@ h1, h2, p, li {
 }
 
 section {
+  // sets frame for content-wrapper children
   height: 750px;
   position: relative;
   width: 100%;
@@ -72,7 +77,7 @@ section {
 }
 
 .content-wrapper {
-  // Unknown width and height
+  // Unknown width and height, but needs to be X- and Y-centered within parent (section)
   position: absolute;
   top: 50%;
   left: 50%;
@@ -150,7 +155,7 @@ footer {
     color: $white;
     padding: 110px 48px;
     margin: 0 auto;
-    @include border-radius(3px);
+    border-radius: 3px;
   }
 
 }
@@ -162,7 +167,7 @@ footer {
 
   .triangle {
     border-top: 260px solid transparent;
-    border-bottom: 0px solid transparent;
+    border-bottom: 0 solid transparent;
     border-left: 260px solid $blue;
     height: 0;
     margin-bottom: 70px; 
@@ -184,8 +189,7 @@ footer {
 
   img {
     width: 160px;
-    -webkit-animation: fullRotation 2s infinite linear; /* Safari 4+ */
-    animation:         fullRotation 2s infinite linear; /* IE 10+, Fx 29+ */
+    animation: fullRotation 2s infinite linear;
   }
 
   h1 {
@@ -204,7 +208,7 @@ footer {
     background-color: $white;
     width: 130px;
     height: 130px;
-    @include border-radius(50%);
+    border-radius: 50%;
     transition: transform .6s ease-in-out;
   }
 
@@ -258,7 +262,7 @@ footer {
     margin: 0 8%;
     margin-bottom: 8%;
     width: 200px;
-    @include border-radius(3px);
+    border-radius: 3px;
   }
 
   .square:nth-child(odd) {
@@ -374,6 +378,10 @@ footer {
 }
 
 @media screen and (max-width: $break-small) {
+
+  section {
+    height: 500px;
+  }
 
   .body-title {
     font-size: 30px;
