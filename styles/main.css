@@ -12,7 +12,6 @@
   100% {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg); } }
-
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -171,6 +170,67 @@ footer {
   #responsive .square:nth-child(even) {
     border: 3px solid #272729; }
 
+#form {
+  background: url("http://placekitten.com/1400/750") no-repeat center;
+  background-size: cover; }
+  #form h1 {
+    color: #22c1ee;
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 170px; }
+  #form form {
+    border: 5px solid rgba(225, 225, 225, 0.3);
+    margin: 0 auto;
+    padding: 70px 20px;
+    position: relative;
+    text-align: left;
+    width: 70%; }
+  #form img {
+    display: inline-block;
+    position: absolute;
+    top: 67px;
+    width: 45px; }
+  #form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #fdfcfc;
+    color: #22c1ee;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    width: 91%;
+    outline: none; }
+
+#experience {
+  background-color: #22c1ee; }
+  #experience .circle-stroke {
+    border: 3px solid #fdfcfc;
+    border-radius: 50%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    transition: all 0.5s linear; }
+  #experience span {
+    color: #fdfcfc;
+    display: block;
+    font-size: 100px;
+    font-weight: 100;
+    transition: font-size 0.5s linear; }
+  #experience h1 {
+    color: #272729;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -60%);
+        -ms-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    width: 100%;
+    transition: font-size 0.5s linear; }
+
 #love {
   background-color: #fdfcfc; }
   #love img {
@@ -196,6 +256,16 @@ footer {
   padding: 0.2em 0; }
 
 @media screen and (max-width: 750px) {
+  .body-title {
+    font-size: 30px;
+    letter-spacing: 2px; }
+
+  #intro h1 {
+    font-size: 50px;
+    line-height: 60px; }
+  #intro h2 {
+    font-size: 40px; }
+
   #responsive h1, #responsive p {
     transition: font-size .2s linear; }
   #responsive h1 {
@@ -205,4 +275,27 @@ footer {
     letter-spacing: 1px;
     margin-top: 30px;
     margin-bottom: 60px;
-    min-width: 310px; } }
+    min-width: 310px; }
+
+  #experience .circle-stroke {
+    height: 250px;
+    width: 250px;
+    transition: all 0.5s linear; }
+  #experience span {
+    font-size: 70px;
+    transition: font-size 0.5s linear; }
+  #experience h1 {
+    font-size: 15px;
+    transition: font-size 0.5s linear; }
+
+  #form h1 {
+    font-size: 50px;
+    line-height: 60px; }
+  #form input {
+    font-size: 15px;
+    width: 78%; }
+
+  #love h1 {
+    font-size: 50px; }
+  #love img {
+    width: 91px; } }

@@ -17,6 +17,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <!-- Faster than @import and may benefit from user caching -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -26,10 +27,11 @@
 
     <section id="intro">
       <div class="content-wrapper">
-        <h1>Your Name</h1>
+        <h1>Tony Oberto</h1>
         <hr>
         <h2>Stanza</h2>
         <ul>
+          <!-- browsers know entity #'s, but not all entity names -->
           <li>html &#8208;</li>
           <li>css &#8208;</li>
           <li>guru</li>
@@ -86,6 +88,7 @@
       <div class="content-wrapper">    
         <h1>Stanza&#8217;s input fields</h1>
         <form>
+          <img src="images/stanza-logo.svg" alt="Stanza logo">
           <input type="text" name="stanza" placeholder="Stanza&#8217;s input field">
         </form>
       </div>
@@ -93,7 +96,9 @@
 
     <section id="experience">
       <div class="content-wrapper">
-        <h1><span>5</span>years of experience</h1>
+        <div class="circle-stroke">
+          <h1><span>5</span>years of experience</h1>
+        </div>
       </div>
     </section>
 

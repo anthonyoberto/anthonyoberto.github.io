@@ -13,11 +13,6 @@ $blue: #22c1ee;
 
 // KEYFRAME ANIMATIONS
 
-@-webkit-keyframes fullRotation {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(359deg); }
-}
-
 @keyframes fullRotation {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(359deg); }
@@ -60,6 +55,11 @@ section {
   height: 750px;
   position: relative;
   width: 100%;
+  // Flexbox, but not compatible w/ IE9; otherwise, remove everything but width from .content-wrapper
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
 
   img, .triangle, .circle {
     display: block;
@@ -72,9 +72,11 @@ section {
 }
 
 .content-wrapper {
+  // Unknown width and height
   position: absolute;
   top: 50%;
   left: 50%;
+  // compensates for the width and height of the element
   transform: translate(-50%, -50%);
   width: 90%;
 }
@@ -268,6 +270,81 @@ footer {
   }
 }
 
+#form {
+  background: url('http://placekitten.com/1400/750') no-repeat center;
+  background-size: cover;
+
+  h1 {
+    color: $blue;
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 170px;
+  }
+
+  form {
+    border: 5px solid rgba(225,225,225,.3);
+    margin: 0 auto;
+    padding: 70px 20px;
+    position: relative;
+    text-align: left;
+    width: 70%;
+  }
+
+  img {
+    display: inline-block;
+    position: absolute;
+    top: 67px;
+    width: 45px;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $white;
+    color: $blue;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    width: 91%;
+    outline: none;
+  }
+}
+
+#experience {
+  background-color: $blue;
+
+  .circle-stroke {
+    border: 3px solid $white;
+    border-radius: 50%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    transition: all 0.5s linear;
+  }
+
+  span {
+    color: $white;
+    display: block;
+    font-size: 100px;
+    font-weight: 100;
+    transition: font-size 0.5s linear;
+  }
+
+  h1 {
+    color: $dark-gray;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -60%);
+    width: 100%;
+    transition: font-size 0.5s linear;
+  }
+}
+
 #love {
   background-color: $white;
 
@@ -288,6 +365,7 @@ footer {
   }
 }
 
+
 .browsehappy {
   background: #ccc;
   color: #000;
@@ -296,6 +374,22 @@ footer {
 }
 
 @media screen and (max-width: $break-small) {
+
+  .body-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  #intro {
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+  }
 
   #responsive {
 
@@ -313,6 +407,49 @@ footer {
       margin-top: 30px;
       margin-bottom: 60px;
       min-width: 310px;
+    }
+  }
+
+  #experience {
+
+    .circle-stroke {
+      height: 250px;
+      width: 250px;
+      transition: all 0.5s linear;
+    }
+
+    span {
+      font-size: 70px;
+      transition: font-size 0.5s linear;
+    }
+
+    h1 {
+      font-size: 15px;
+      transition: font-size 0.5s linear;
+    }
+  }
+
+  #form {
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    input {
+      font-size: 15px;
+      width: 78%;
+    }
+
+  }
+
+  #love {
+    h1 {
+      font-size: 50px;
+    }
+
+    img {
+      width: 91px;
     }
   }
 
