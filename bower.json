@@ -1,8 +1,10 @@
 {
-  "name": "stanza",
+  "name": "activ8",
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
-    "modernizr": "~2.8.2"
+    "skrollr": "~0.6.29",
+    "modernizr": "~2.8.3",
+    "classie": "~1.0.1"
   }
 }
