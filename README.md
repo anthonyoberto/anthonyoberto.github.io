@@ -1,5 +1,5 @@
-# Current Project
-Activ8, a single-page marketing site
+# activ8
+single-page marketing site
 
 ## Getting Started
 

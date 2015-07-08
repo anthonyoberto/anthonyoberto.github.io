@@ -16,40 +16,27 @@ $break-xs: 350px;
 // VARIABLES
 $link-color: #f48119;
 
-// Typefaces: Cabin Regular & Medium
+// Typefaces: Cabin Regular & Italic
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,400italic);
 
 @font-face{
   font-family:'BentonSans Bold';
-  src: url('fonts/BentonSans_Bold.otf'); /* everyone else take this */
+  src: url('fonts/BentonSans_Bold.otf');
 }
 
 @font-face{
   font-family:'BentonSans Comp Medium';
-  src: url('fonts/BentonSans_Comp_Medium.otf'); /* everyone else take this */
+  src: url('fonts/BentonSans_Comp_Medium.otf');
 }
 
 @font-face{
   font-family:'BentonSans Comp Bold';
-  src: url('fonts/BentonSans_Comp_Bold.otf'); /* everyone else take this */
+  src: url('fonts/BentonSans_Comp_Bold.otf');
 }
 
 // KEY-FRAMES
-@-webkit-keyframes bgrdRotate {
-  0% {transform: rotate(359deg);}
-  100% {transform: rotate(0deg);}
-}
-
 @keyframes bgrdRotate {
   0% {transform: rotate(359deg);}
-  100% {transform: rotate(0deg);}
-}
-
-@-webkit-keyframes socialWiggle {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(20deg);}
-  50% {transform: rotate(0deg);}
-  75% {transform: rotate(-20deg);}
   100% {transform: rotate(0deg);}
 }
 
@@ -98,25 +85,38 @@ li {
 }
 
 a {
+  bottom: 0;
   color: $link-color;
+  position: relative;
   text-decoration: none;
+  transition: color .2s cubic-bezier(0,0,0.35,1);
+}
+
+a:hover {
+  color: #f3b944;
+}
+
+.primary-nav, .footer-nav {
+  a {
+    transition: bottom .2s cubic-bezier(0,0,0.35,1);
+  }
+
+  a:hover {
+    bottom: 3px;
+  }
 }
 
 // Highlight //
 
-::-moz-selection { background: transparent; }
 ::selection { background: transparent; }
-h1::-moz-selection { background: #F2F7D5; }
 h1::selection { background: #F2F7D5; }
-p::-moz-selection { background: #F2F7D5; }
 p::selection { background: #F2F7D5; }
-a::-moz-selection { background: #F2F7D5; }
 a::selection { background: #F2F7D5; }
 
 // Fixed Nav //
 
 .primary-nav-wrapper {
-  background-color: #fff;
+  background-color: rgba(255,255,255,1);
   height: 53px;
   padding-top: 26px;
   padding-bottom: 22px;
@@ -124,9 +124,7 @@ a::selection { background: #F2F7D5; }
   top: 46px;
   width: 100%;
   z-index: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
   transition-property: height, padding-top, padding-bottom;
 
   h1 {
@@ -137,10 +135,9 @@ a::selection { background: #F2F7D5; }
   .activ8-logo {
     margin-right: 30px;
     padding-left: 50px;
+    opacity: 1;
+    transition: width .3s ease-in-out;
     width: 300px;
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
   }
 
   .primary-nav {
@@ -155,7 +152,7 @@ a::selection { background: #F2F7D5; }
     display: inline-block;
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.7px;
+    letter-spacing: .7px;
     margin-right: 40px;
     text-transform: uppercase;
   }
@@ -167,8 +164,8 @@ a::selection { background: #F2F7D5; }
 }
 
 .primary-nav-wrapper.primary-nav-wrapper-shrink {
+  background-color: rgba(255,255,255,.93);
   height: 35px;
-  opacity: .93;
   padding-top: 18px;
   padding-bottom: 18px;
   position: fixed;
@@ -204,10 +201,6 @@ a::selection { background: #F2F7D5; }
     width: 105%;
     z-index: -1;
     background: url("../images/header-ring-green.svg") no-repeat;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
     background-position: center;
     background-size: 113%;
@@ -248,7 +241,7 @@ a::selection { background: #F2F7D5; }
   p {
     display: inline-block;
     font-size: 13.5px;
-    letter-spacing: 0.4px;
+    letter-spacing: .4px;
     margin: 0;
     position: relative;
     bottom: 4px;
@@ -295,12 +288,8 @@ a::selection { background: #F2F7D5; }
   position: absolute;
   width: 100%;
   z-index: -1;
+  top: 0;
   background: url("../images/services-ring-orange.svg") no-repeat;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
   background-position: center;
   background-size: 120%;
 }
@@ -337,7 +326,7 @@ a::selection { background: #F2F7D5; }
       font-family: 'BentonSans Comp Medium', helvetica, sans-serif;
       font-size: 20px;
       font-weight: 100;
-      letter-spacing: 0.7px;
+      letter-spacing: .7px;
       width: 100%;
     }
   }
@@ -351,16 +340,16 @@ a::selection { background: #F2F7D5; }
   width: 100%;
   z-index: -1;
   background: url("../images/clients-ring-red.svg") no-repeat;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   background-position: center;
   background-size: 140%;
 }
 
 #ourClients {
+
+  .section-wrapper {
+    max-width: 1220px;
+  }
 
   .client-copy {
     text-align: center;
@@ -392,14 +381,9 @@ a::selection { background: #F2F7D5; }
   width: 109%;
   z-index: -1;
   background: url("../images/contact-ring-blue.svg") no-repeat;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   background-position: center;
   background-size: 80%;
-  -webkit-animation: bgrdRotate 145s infinite linear;
   animation: bgrdRotate 145s infinite linear;
 }
 
@@ -437,14 +421,11 @@ a::selection { background: #F2F7D5; }
       margin-right: 12px;
       position: relative;
       width: 35px;
-      -webkit-transition: bottom 0.2s cubic-bezier(0, 0, 0.35, 1);
-      -moz-transition: bottom 0.2s cubic-bezier(0, 0, 0.35, 1);
-      transition: bottom 0.2s cubic-bezier(0, 0, 0.35, 1);
+      transition: bottom .2s cubic-bezier(0,0,0.35,1);
     }
 
     img:hover {
       bottom: 7px;
-      -webkit-animation: socialWiggle .28s 2 ease;
       animation: socialWiggle .28s 2 ease;
     }
   }
@@ -465,7 +446,7 @@ a::selection { background: #F2F7D5; }
       font-family: 'Cabin', helvetica, sans-serif;
       font-style: italic;
       font-weight: 100;
-      letter-spacing: 0.8px;
+      letter-spacing: .8px;
     }
 
     input {
@@ -490,24 +471,22 @@ a::selection { background: #F2F7D5; }
       width: 94.2%;
     }
 
-    .send-button {
+    #sendButton {
       background-color: #fff;
       color: #0091be;
       cursor: pointer;
       font-family: 'BentonSans Bold', helvetica, sans-serif;
       font-weight: 100;
       font-style: normal;
-      letter-spacing: 0.75px;
+      letter-spacing: .75px;
       line-height: 34px;
       text-transform: uppercase;
       width: 150px;
       height: 38px;
-      -webkit-transition: .75s background-color, .75s color;
-      -moz-transition: .75s background-color, .75s color;
       transition: .75s background-color, .75s color;
     }
 
-    .send-button:hover {
+    #sendButton:hover {
       background-color: #0091be;
       color: #fff;
     }
@@ -517,7 +496,7 @@ a::selection { background: #F2F7D5; }
 footer {
   background-color: #fff;
   font-size: 14px;
-  letter-spacing: 0.4px;
+  letter-spacing: .4px;
   padding: 30px 80px;
 
   p {
@@ -619,13 +598,13 @@ footer {
         width: 86.6%;
       }
 
-      .send-button {
+      #sendButton {
         letter-spacing: .75px;
         width: 150px;
         height: 38px;
       }
 
-      .send-button:hover {
+      #sendButton:hover {
       }
     }
   }
@@ -811,10 +790,10 @@ footer {
         width: 95%;
       }
 
-      .send-button {
+      #sendButton {
       }
 
-      .send-button:hover {
+      #sendButton:hover {
       }
     }
   }
@@ -1257,8 +1236,8 @@ footer {
 
 
 .browsehappy {
-  margin: 0.2em 0;
+  margin: .2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
+  padding: .2em 0;
 }

@@ -20,16 +20,6 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<!--
-    <nav class="primary-nav-wrapper fixed-on-scroll" data-0="position: absolute; top: !46px;" data-46="top:!0; position: fixed;">
--->
-
-<!-- Skrollr implementation effects breakpoints
-      <h1 data-46="height: 53px;" data-180="height: 44px;">
-        <img class="activ8-logo" src="images/activ8-logo-2x.png" alt="Activ8 360 logo" data-46="width: 300px;" data-180="width: 250px">
-      </h1>
--->
-
     <nav class="primary-nav-wrapper">
       <h1>
         <a href="#top"><img class="activ8-logo" src="images/activ8-logo-2x.png" alt="Activ8 360 logo">
@@ -73,7 +63,7 @@
     </section>
 
     <section id="whatWeDo">
-      <div class="what-we-do-background" data-bottom-top="top: 0px;" data-top-bottom="top: -90px;"></div>
+      <div class="what-we-do-background" data-bottom-top="transform: translateY(0px);" data-top-bottom="transform: translateY(-90px);"></div>
       <div class="section-wrapper">
 
         <div class="center-copy">
@@ -113,26 +103,23 @@
         </div>
 
         <div class="client-logo-grid">
-          <img src="http://placehold.it/145x100" alt="#" data--100-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--125-bottom="opacity: 0;" data--225-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--150-bottom="opacity: 0;" data--250-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--175-bottom="opacity: 0;" data--275-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--200-bottom="opacity: 0;" data--300-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--225-bottom="opacity: 0;" data--325-bottom="opacity: 1;">
+          <img src="images/clients/fedex.png" data-bottom="opacity: 0;" data--50-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/mattel.png" data--10-bottom="opacity: 0;" data--60-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/dr-pepper.png" data--20-bottom="opacity: 0;" data--70-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/fridays.png" data--30-bottom="opacity: 0;" data--80-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/pepsi.png" data--40-bottom="opacity: 0;" data--90-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/p-and-g.png" data--50-bottom="opacity: 0;" data--100-bottom="opacity: 1;" alt="TBD">
 
-          <img src="http://placehold.it/145x100" alt="#" data--250-bottom="opacity: 0;" data--350-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--275-bottom="opacity: 0;" data--375-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--300-bottom="opacity: 0;" data--400-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--325-bottom="opacity: 0;" data--425-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--350-bottom="opacity: 0;" data--450-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--375-bottom="opacity: 0;" data--475-bottom="opacity: 1;">
-
-          <img src="http://placehold.it/145x100" alt="#" data--400-bottom="opacity: 0;" data--500-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--425-bottom="opacity: 0;" data--525-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--450-bottom="opacity: 0;" data--550-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--475-bottom="opacity: 0;" data--575-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--500-bottom="opacity: 0;" data--600-bottom="opacity: 1;">
-          <img src="http://placehold.it/145x100" alt="#" data--525-bottom="opacity: 0;" data--625-bottom="opacity: 1;">
+          <img src="images/clients/frito-lay.png" data--60-bottom="opacity: 0;" data--110-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/7-eleven.png" data--70-bottom="opacity: 0;" data--120-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/campbells.png" data--80-bottom="opacity: 0;" data--130-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/heinz.png" data--90-bottom="opacity: 0;" data--140-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/mikes-hard-lemonade.png" data--100-bottom="opacity: 0;" data--150-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/norwegian-cruise-line.png" data--110-bottom="opacity: 0;" data--160-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/spin-master.png" data--120-bottom="opacity: 0;" data--170-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/golds-gym.png" data--130-bottom="opacity: 0;" data--180-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/pizza-hut.png" data--140-bottom="opacity: 0;" data--190-bottom="opacity: 1;" alt="TBD">
+          <img src="images/clients/diageo.png" data--150-bottom="opacity: 0;" data--200-bottom="opacity: 1;" alt="TBD">
         </div>
       </div>
     </section>
@@ -158,17 +145,18 @@
           </div>
         </div>
 
+        <span id="errorMessage"></span>
         <div class="contact-form-wrapper">
-          <form action="action_page.php">
-            <input type="text" name="name" value="Name">
-            <input type="text" name="email" value="Email">
+          <form id="commentForm">
+            <input id="name" type="text" name="name" value="Name" required>
+            <input id="email" type="email" name="email" value="Email" required>
             <br>
-            <input type="text" name="loacation" value="Location">
-            <input type="text" name="phone" value="Phone Number">
+            <input id="location" type="text" name="location" value="Location">
+            <input id="phone" type="text" name="phone" value="Phone Number">
             <br>
-            <textarea name="comment" form="usrform">Message</textarea>
+            <textarea id="comments" name="comments" required>Message</textarea>
             <br>
-            <input class="send-button" type="submit" value="SEND">
+            <input id="sendButton" type="submit" value="SEND">
           </form>
         </div>
 
@@ -198,10 +186,11 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/skrollr/src/skrollr.js"></script>
     <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/parse/parse.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
       if (Modernizr.touch) {
         skrollr.init().destroy();
       } else {
@@ -219,9 +208,11 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script src="scripts/nav-animation.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/nav-animation.js"></script>
+    <script src="scripts/email-form.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
