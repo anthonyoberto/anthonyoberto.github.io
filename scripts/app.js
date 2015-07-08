@@ -12,7 +12,8 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		console.log("Handling the submit");
-		//add error handling here
+		//error handling here
+
 		//gather the form data
 
 		var data = {};
@@ -27,7 +28,9 @@ $(document).ready(function() {
 			success:function() {
 				console.log("Success");
 				//Alerts are lame - but quick and easy
-				alert("Thanks for filling the form!");
+				// alert("Thanks for filling the form!");
+				$('#commentForm').fadeOut("slow");
+				$('#formSubmitted').delay(700).fadeIn("fast");
 			},
 			error:function(e) {
 				console.dir(e);

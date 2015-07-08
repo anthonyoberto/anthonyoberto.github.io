@@ -71,6 +71,7 @@ p {
   font-family: 'Cabin', helvetica, sans-serif;
   font-weight: 400;
   line-height: 22px;
+  letter-spacing: .4px;
   margin-bottom: 0;
 }
 
@@ -112,6 +113,8 @@ a:hover {
 h1::selection { background: #F2F7D5; }
 p::selection { background: #F2F7D5; }
 a::selection { background: #F2F7D5; }
+input::selection { background: #F2F7D5; }
+textarea::selection { background: #F2F7D5; }
 
 // Fixed Nav //
 
@@ -397,7 +400,6 @@ a::selection { background: #F2F7D5; }
 }
 
 #contact {
-  // padding-bottom: 45px;
   height: 540px;
 
   .copy-and-social-wrapper {
@@ -432,6 +434,31 @@ a::selection { background: #F2F7D5; }
 
   .lower-contact-social-wrapper {
     display: none;
+  }
+
+  #errorMessage {
+    color: #f3b944;
+    display: block;
+    font-family: 'Cabin', helvetica, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: .8px;
+    position: relative;
+  }
+
+  #formSubmitted {
+    position: absolute;
+    text-align: center;
+    top: 184px;
+    right: 15%;
+    width: 430px;
+
+    p {
+      font-size: 30px;
+      font-style: italic;
+      line-height: 30px;
+    }
   }
 
   form {
@@ -576,6 +603,17 @@ footer {
     .upper-contact-social-wrapper {
 
       img {
+      }
+    }
+
+    #formSubmitted {
+      top: 160px;
+      right: 13%;
+      width: 330px;
+
+      p {
+        font-size: 30px;
+        line-height: 30px;
       }
     }
 
@@ -765,8 +803,25 @@ footer {
       }
     }
 
+    .contact-form-wrapper {
+      height: 450px;
+    }
+
+    #formSubmitted {
+      position: relative;
+      top: 170px;
+      right: auto;
+      width: 100%;
+      margin: 0 auto;
+
+      p {
+        font-size: 30px;
+        font-style: italic;
+        line-height: 30px;
+      }
+    }
+
     form {
-      display: block;
       position: relative;
       right: 0;
       text-align: center;

@@ -145,7 +145,6 @@
           </div>
         </div>
 
-        <span id="errorMessage"></span>
         <div class="contact-form-wrapper">
           <form id="commentForm">
             <input id="name" type="text" name="name" value="Name" required>
@@ -157,7 +156,11 @@
             <textarea id="comments" name="comments" required>Message</textarea>
             <br>
             <input id="sendButton" type="submit" value="SEND">
+            <span id="errorMessage"></span>
           </form>
+          <div id="formSubmitted" style="display:none;">
+            <p>Thank you. We&#8217;ll be in touch soon!</p>
+          </div>
         </div>
 
         <div class="lower-contact-social-wrapper">

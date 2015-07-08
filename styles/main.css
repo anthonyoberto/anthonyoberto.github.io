@@ -74,6 +74,7 @@ p {
   font-family: 'Cabin', helvetica, sans-serif;
   font-weight: 400;
   line-height: 22px;
+  letter-spacing: .4px;
   margin-bottom: 0; }
 
 ul {
@@ -121,6 +122,18 @@ a::-moz-selection {
   background: #F2F7D5; }
 
 a::selection {
+  background: #F2F7D5; }
+
+input::-moz-selection {
+  background: #F2F7D5; }
+
+input::selection {
+  background: #F2F7D5; }
+
+textarea::-moz-selection {
+  background: #F2F7D5; }
+
+textarea::selection {
   background: #F2F7D5; }
 
 .primary-nav-wrapper {
@@ -360,6 +373,25 @@ a::selection {
               animation: socialWiggle .28s 2 ease; }
   #contact .lower-contact-social-wrapper {
     display: none; }
+  #contact #errorMessage {
+    color: #f3b944;
+    display: block;
+    font-family: 'Cabin', helvetica, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: .8px;
+    position: relative; }
+  #contact #formSubmitted {
+    position: absolute;
+    text-align: center;
+    top: 184px;
+    right: 15%;
+    width: 430px; }
+    #contact #formSubmitted p {
+      font-size: 30px;
+      font-style: italic;
+      line-height: 30px; }
   #contact form {
     display: inline-block;
     position: absolute;
@@ -449,6 +481,13 @@ footer {
     width: 29%;
     max-width: 340px;
     min-width: 274px; }
+  #contact #formSubmitted {
+    top: 160px;
+    right: 13%;
+    width: 330px; }
+    #contact #formSubmitted p {
+      font-size: 30px;
+      line-height: 30px; }
   #contact form {
     position: absolute;
     right: 10px;
@@ -561,8 +600,19 @@ footer {
       #contact .lower-contact-social-wrapper img {
         margin-right: 15px;
         width: 30px; }
+    #contact .contact-form-wrapper {
+      height: 450px; }
+    #contact #formSubmitted {
+      position: relative;
+      top: 170px;
+      right: auto;
+      width: 100%;
+      margin: 0 auto; }
+      #contact #formSubmitted p {
+        font-size: 30px;
+        font-style: italic;
+        line-height: 30px; }
     #contact form {
-      display: block;
       position: relative;
       right: 0;
       text-align: center;
