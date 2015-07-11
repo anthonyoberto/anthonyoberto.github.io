@@ -379,7 +379,7 @@ textarea::selection {
     font-family: 'Cabin', helvetica, sans-serif;
     font-size: 17px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     letter-spacing: .8px;
     position: relative; }
   #contact #formSubmitted {
@@ -432,6 +432,7 @@ textarea::selection {
       font-style: normal;
       letter-spacing: 1px;
       line-height: 34px;
+      margin-bottom: 12px;
       text-transform: uppercase;
       width: 150px;
       height: 38px;
@@ -525,7 +526,7 @@ footer {
       bottom: 0;
       display: block;
       font-size: 15px;
-      padding-top: 6px;
+      padding-top: 4px;
       margin-left: 0; }
     .primary-nav-wrapper li {
       display: inline-block;
@@ -605,7 +606,7 @@ footer {
       display: none; }
     #contact .lower-contact-social-wrapper {
       display: block;
-      margin-top: 25px; }
+      margin-top: 35px; }
       #contact .lower-contact-social-wrapper img {
         margin-right: 15px;
         width: 30px; }
@@ -725,6 +726,9 @@ footer {
           -ms-transform: translateY(0%);
               transform: translateY(0%); }
 
+  .what-we-do-background {
+    background-size: 255%; }
+
   #whatWeDo .services-wrapper .col {
     display: block;
     margin: 0 auto;
@@ -768,7 +772,7 @@ footer {
         padding: 0 7px; } }
 @media screen and (max-width: 588px) {
   .our-clients-background {
-    background-size: 320%; } }
+    background-size: 340%; } }
 @media screen and (max-width: 600px) {
   footer {
     font-size: 12px;
@@ -801,13 +805,13 @@ footer {
       top: 30%; }
 
   .section-wrapper {
-    padding: 70px 35px; }
+    padding: 120px 35px; }
 
   #whatWeDo .center-copy {
     min-width: 285px; }
 
   .what-we-do-background {
-    background-size: 300%; }
+    background-size: 360%; }
 
   .contact-background-element {
     background-size: 100%;
@@ -817,13 +821,19 @@ footer {
     left: -55%; }
 
   #contact .section-wrapper {
-    padding: 70px 35px; } }
+    padding: 70px 35px; }
+  #contact #errorMessage {
+    font-size: 14px;
+    letter-spacing: .1px; } }
 @media screen and (max-width: 350px) {
   section, footer {
     padding: 27px 32px; }
 
+  section h1 {
+    width: 190px; }
+
   p {
-    font-size: 13bowpx;
+    font-size: 13px;
     line-height: 20px; }
 
   .contact-us-background {
@@ -856,6 +866,9 @@ footer {
           -ms-transform: translateY(0%);
               transform: translateY(0%); }
 
+  .what-we-do-background {
+    background-size: 416%; }
+
   #whatWeDo p {
     font-size: 14px;
     line-height: 20px; }
@@ -865,10 +878,11 @@ footer {
     width: 100%;
     max-width: 400px; }
   #whatWeDo .center-copy {
-    display: none; }
+    min-width: 240px; }
 
-  #ourClients h1 {
-    font-size: 24px; }
+  .our-clients-background {
+    background-size: 650%; }
+
   #ourClients p {
     font-size: 13.2px; }
   #ourClients .client-copy {
@@ -877,6 +891,9 @@ footer {
   #ourClients img {
     padding: 5px;
     width: 115px; }
+
+  #contact h1, #ourClients h1 {
+    line-height: 31px; }
 
   footer {
     font-size: 12px; }
