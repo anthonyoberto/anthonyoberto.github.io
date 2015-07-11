@@ -27,8 +27,6 @@ $(document).ready(function() {
 		comment.save(data, {
 			success:function() {
 				console.log("Success");
-				//Alerts are lame - but quick and easy
-				// alert("Thanks for filling the form!");
 				$('#commentForm').fadeOut("slow");
 				$('#formSubmitted').delay(700).fadeIn("fast");
 			},

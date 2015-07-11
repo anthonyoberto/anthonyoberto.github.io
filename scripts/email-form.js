@@ -74,11 +74,24 @@ function prepareEventHandlers() {
 			document.getElementById('errorMessage').innerHTML = "*Please provide your name above.";
 			// to stop the form from submitting
 			return false;
+		} else if (document.getElementById('email').value == "Email") {
+			document.getElementById('errorMessage').innerHTML = "*Please provide your email address above.";
+			// to stop the form from submitting
+			return false;
+		} else if (document.getElementById('phone').value == "Phone Number") {
+			document.getElementById('errorMessage').innerHTML = "*Please provide your phone number above.";
+			// to stop the form from submitting
+			return false;
+		} else if (document.getElementById('comments').value == "Message") {
+			document.getElementById('errorMessage').innerHTML = "*Please include a message above.";
+			// to stop the form from submitting
+			return false;
 		} else {
 			// reset and allow the form to submit
 			document.getElementById('errorMessage').innerHTML = "";
 			return true;
 		}
+
 	};
 }
 
