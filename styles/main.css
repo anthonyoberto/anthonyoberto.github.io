@@ -79,6 +79,9 @@ li {
   font-family: 'Oswald', helvetica, sans-serif;
   font-weight: 400; }
 
+img {
+  border: 0; }
+
 a {
   bottom: 0;
   color: #f48119;
@@ -214,11 +217,13 @@ textarea::selection {
     margin-right: 20px; }
   .contact-us-background img {
     width: 23px;
-    margin-right: 6px; }
+    margin-right: 6px;
+    height: 20px; }
   .contact-us-background .phone img {
     position: relative;
     width: 25px;
-    top: 1px; }
+    top: 1px;
+    height: 20px; }
   .contact-us-background p {
     display: inline-block;
     font-size: 13.5px;

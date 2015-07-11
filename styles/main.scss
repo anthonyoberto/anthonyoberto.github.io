@@ -73,6 +73,10 @@ li {
   font-weight: 400;
 }
 
+img {
+  border: 0;
+}
+
 a {
   bottom: 0;
   color: $link-color;
@@ -216,12 +220,14 @@ textarea::selection { background: #F2F7D5; }
   img {
     width: 23px;
     margin-right: 6px;
+    height: 20px;
   }
 
   .phone img {
       position: relative;
       width: 25px;
       top: 1px;
+      height: 20px;
   }
 
   p {
