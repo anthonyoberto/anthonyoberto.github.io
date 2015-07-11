@@ -79,13 +79,13 @@ li {
   font-family: 'Oswald', helvetica, sans-serif;
   font-weight: 400; }
 
-img {
-  border: 0; }
+a, img {
+  border: 0;
+  outline: 0; }
 
 a {
   bottom: 0;
   color: #f48119;
-  outline: 0;
   position: relative;
   text-decoration: none;
   transition: color 0.2s cubic-bezier(0, 0, 0.35, 1); }

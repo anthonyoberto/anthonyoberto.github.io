@@ -73,14 +73,14 @@ li {
   font-weight: 400;
 }
 
-img {
+a, img {
   border: 0;
+  outline: 0;
 }
 
 a {
   bottom: 0;
   color: $link-color;
-  outline: 0;
   position: relative;
   text-decoration: none;
   transition: color .2s cubic-bezier(0,0,0.35,1);
